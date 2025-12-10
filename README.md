@@ -96,8 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
         display: block;
         height: 15px; /* erzeugt sichtbaren Abstand */
     }
-    .hero h1 { font-size: clamp(22px, 6vw, 35px); margin:0; font-family: 'Georgia', serif; }
-    .hero .sub { font-size: clamp(16px, 5vw, 20px); margin:10px 0; font-family: 'Georgia', serif; }
+    .hero h1 { font-size: clamp(22px, 6vw, 35px); margin:0; font-family: 'Parisienne', cursive; }
+    .hero .sub { font-size: clamp(16px, 5vw, 20px); margin:10px 0; font-family:'Parisienne', cursive; }
 
     .intro { animation-delay: 0.5s; }
     .location { animation-delay: 1s; }
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .event { display:flex; flex-direction:row; align-items:flex-start; gap:20px; }
     .time { font-size:20px; font-weight:bold; color:#555; width:60px; text-align:right; }
     .details { flex:1; }
-    .details h3 { margin:0; font-size:15px; font-family:'Georgia', serif; color:#333; }
+    .details h3 { margin:0; font-size:15px; font-family:'Parisienne', cursive; color:#333; }
     .details p { margin:4px 0 0; font-size:16px; color:#666; }
 
     /* Basis: Handy */
