@@ -3,9 +3,7 @@
 <html lang="de">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-https://fonts.googleapis.com
-https://fonts.gstatic.com
-https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap
+
 <style>
 
 body {
