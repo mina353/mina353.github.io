@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="initials">Ahmad<span class="symbol">♥</span>Mina</div>
 	<span class="extra-space1"></span>
  <div class="sub">Save the Date</div>
-    <div class="sub">20/03/2025</div>
+    <div class="sub">20/05/2025</div>
 </section>
  </section>
  <section class="intro">
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	<span class="extra-space1"></span>
     <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
 	<span class="extra-space2"></span>
-	<p class="animate-on-scroll">wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. März 2025 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
+	<p class="animate-on-scroll">wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. mai 2025 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
 	<span class="extra-space1"></span>
 	<p class="animate-on-scroll">Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
 	<span class="extra-space1"></span>
