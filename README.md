@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     .monogram .initials {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Parisienne', cursive;
       /* Responsive Größe: skaliert sinnvoll zwischen Handy und Desktop */
       font-size: clamp(36px, 10vw, 100px);
       font-weight: bold;
