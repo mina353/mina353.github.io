@@ -1,10 +1,11 @@
 
+
 <html lang="de">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap
 <style>
 
 body {
@@ -45,62 +46,60 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     body { margin:0; font-family: 'Georgia', serif; background:#f8f8f8; color:#333; line-height:1.6; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; opacity:0; transform: translateY(30px); animation: fadeIn 1.5s forwards; }
-	h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
+    h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
     p  { font-size: 18px; margin: 6px 0; }
 
     /* HERO */
     .hero {
-      height: 100vh;
+      min-height: 60vh; /* statt fix 100vh, damit auf kleinen Displays nichts abgeschnitten wird */
       background: url('hero.png') center/cover no-repeat;
       display:flex; flex-direction:column; justify-content:center; align-items:center;
       color:#fff; text-shadow:0 2px 4px rgba(0,0,0,0.6);
       opacity:1; transform:none; animation:none;
+      padding: 24px; /* etwas Innenabstand für kleine Screens */
     }
 
+    .monogram {
+      margin: 60px auto;
+      text-align: center;
+    }
 
-	
-.monogram {
-  margin: 60px auto;
-  text-align: center;
-}
+    .monogram .initials {
+      font-family: 'Playfair Display', serif;
+      /* Responsive Größe: skaliert sinnvoll zwischen Handy und Desktop */
+      font-size: clamp(36px, 10vw, 100px);
+      font-weight: bold;
+      letter-spacing: clamp(2px, 1vw, 10px);
+      color: #fff;
+    }
 
-.monogram .initials {
-  font-family: 'Playfair Display', serif;
-  font-size: 100px;
-  font-weight: bold;
-  letter-spacing: 10px;
-  color: #fff;
-}
+    .monogram .symbol {
+      font-size: clamp(24px, 6vw, 50px);
+      color: #fff;
+      margin: 0 10px;
+    }
 
-.monogram .symbol {
-  font-size: 50px;
-  color: #fff;
-  margin: 0 10px;
-}
+    .monogram .names {
+      font-family: 'Parisienne', cursive;
+      font-size: clamp(18px, 4.5vw, 28px);
+      margin-top: 10px;
+      color: #fff;
+    }
 
-.monogram .names {
-  font-family: 'Parisienne', cursive;
-  font-size: 28px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-	
-	 
-.extra-space {
-    display: block;
-    height: 40px; /* erzeugt sichtbaren Abstand */
-}
-.extra-space1 {
-    display: block;
-    height: 25px; /* erzeugt sichtbaren Abstand */
-}
-.extra-space2 {
-    display: block;
-    height: 15px; /* erzeugt sichtbaren Abstand */
-}
-    .hero h1 { font-size: 35px; margin:0; font-family: 'Georgia', serif; }
-    .hero .sub { font-size: 20px; margin:10px 0; font-family: 'Georgia', serif; }
+    .extra-space {
+        display: block;
+        height: 40px; /* erzeugt sichtbaren Abstand */
+    }
+    .extra-space1 {
+        display: block;
+        height: 25px; /* erzeugt sichtbaren Abstand */
+    }
+    .extra-space2 {
+        display: block;
+        height: 15px; /* erzeugt sichtbaren Abstand */
+    }
+    .hero h1 { font-size: clamp(22px, 6vw, 35px); margin:0; font-family: 'Georgia', serif; }
+    .hero .sub { font-size: clamp(16px, 5vw, 20px); margin:10px 0; font-family: 'Georgia', serif; }
 
     .intro { animation-delay: 0.5s; }
     .location { animation-delay: 1s; }
@@ -118,31 +117,44 @@ document.addEventListener('DOMContentLoaded', function() {
     .details { flex:1; }
     .details h3 { margin:0; font-size:15px; font-family:'Georgia', serif; color:#333; }
     .details p { margin:4px 0 0; font-size:16px; color:#666; }
-	
-/* Basis: Handy */
-body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
-.container { padding: 16px; max-width: 100%; }
 
-/* Buttons/Links gut klickbar */
-button, .btn, a { min-height: 44px; padding: 12px 16px; display: inline-block; }
+    /* Basis: Handy */
+    body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
+    .container { padding: 16px; max-width: 100%; }
 
-/* Bilder responsiv */
-img { max-width: 100%; height: auto; }
+    /* Buttons/Links gut klickbar */
+    button, .btn, a { min-height: 44px; padding: 12px 16px; display: inline-block; }
 
-/* Ab ~768px: Layout verbreitern */
-@media (min-width: 768px) {
-  .container { max-width: 720px; margin: 0 auto; }
-}
+    /* Bilder responsiv */
+    img { max-width: 100%; height: auto; }
 
-/* Ab ~1024px: ggf. zweispaltiges Layout */
-@media (min-width: 1024px) {
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-}
+    /* Ab ~768px: Layout verbreitern */
+    @media (min-width: 768px) {
+      .container { max-width: 720px; margin: 0 auto; }
+    }
 
-    @media (max-width:600px){
-      .hero h1 { font-size:50px; }
-      .hero .sub { font-size:22px; }
-      .time { width:50px; font-size:18px; }
+    /* Ab ~1024px: ggf. zweispaltiges Layout */
+    @media (min-width: 1024px) {
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    }
+
+    /* Mobile Feintuning */
+    @media (max-width: 600px){
+      /* Hero-Texte angenehm groß, aber nicht übermäßig */
+      .hero h1 { font-size: clamp(24px, 7vw, 32px); }
+      .hero .sub { font-size: clamp(16px, 5.5vw, 22px); }
+
+      /* Monogramm-Abstände auf Handy reduzieren */
+      .monogram { margin: 24px auto; }
+
+      /* Sektionen kompakter auf Handy */
+      section { padding: 24px 16px; max-width: 640px; }
+
+      /* Zeitachse etwas schmaler */
+      .time { width: 50px; font-size: 18px; }
+
+      /* Große Außenränder vermeiden */
+      body { margin: 0; }
     }
 </style>
 </head>
@@ -150,27 +162,29 @@ img { max-width: 100%; height: auto; }
 
 <!-- Monogramm -->
 <section class="hero">
-<section class="monogram">
-  <div class="initials">Ahmad<span class="symbol">♥</span>Mina</div>
-	<span class="extra-space1"></span>
- <div class="sub">Save the Date</div>
+  <section class="monogram">
+    <div class="initials">Ahmad<span class="symbol">♥</span>Mina</div>
+    <span class="extra-space1"></span>
+    <div class="sub">Save the Date</div>
     <div class="sub">20/05/2025</div>
-</section>
- </section>
- <section class="intro">
-    <h2 class="animate-on-scroll">Welcome!</h2>
-	<span class="extra-space1"></span>
-    <p class="animate-on-scroll">Dear Family and Friends,</p>
-	<span class="extra-space2"></span>
-	<p class="animate-on-scroll">We are overjoyed to invite you to celebrate our wedding day with us.This special occasion will be held on March 20, 2025, 
-	at 4:00 PM at the Ariana Event venue. We truly cannot wait to share this unique moment with all of you.</p>
-	<span class="extra-space1"></span>
-	<p class="animate-on-scroll">In order to finalize our planning, we kindly request that you confirm your attendance by early February.</p>
-	<span class="extra-space1"></span>
-	<!--<p class="animate-on-scroll">Wir freuen uns, eure gesamte Familie an diesem besonderen Tag begrüßen zu dürfen.</p>-->
-	<!--<p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 2 Personen.</p>-->
-	<p class="animate-on-scroll">We are excited to share this special day and welcome your entire family.</p>
   </section>
+</section>
+
+<section class="intro">
+    <h2 class="animate-on-scroll">Welcome!</h2>
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll">Dear Family and Friends,</p>
+    <span class="extra-space2"></span>
+    <p class="animate-on-scroll">We are overjoyed to invite you to celebrate our wedding day with us.This special occasion will be held on March 20, 2025, 
+    at 4:00 PM at the Ariana Event venue. We truly cannot wait to share this unique moment with all of you.</p>
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll">In order to finalize our planning, we kindly request that you confirm your attendance by early February.</p>
+    <span class="extra-space1"></span>
+    <!-- <p class="animate-on-scroll">Wir freuen uns, eure gesamte Familie an diesem besonderen Tag begrüßen zu dürfen.</p> -->
+    <!-- <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 2 Personen.</p> -->
+    <p class="animate-on-scroll">We are excited to share this special day and welcome your entire family.</p>
+</section>
+
 
  <!--- <section class="intro">
     <h2 class="animate-on-scroll">Willkommen!</h2>
