@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Monogramm -->
 <section class="hero">
 <section class="monogram">
-  <div class="initials">A<span class="symbol">♥</span>M</div>
+  <div class="initials">Ahmad<span class="symbol">♥</span>Mina</div>
+	<span class="extra-space1"></span>
  <div class="sub">Save the Date</div>
     <div class="sub">20/03/2025</div>
 </section>
