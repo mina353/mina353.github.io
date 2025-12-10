@@ -1,5 +1,4 @@
-# mina353.github.io
-<!DOCTYPE html>
+
 <html lang="de">
 <head> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
