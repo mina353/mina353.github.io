@@ -1,6 +1,7 @@
 
 <html lang="de">
-<head> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -117,6 +118,26 @@ document.addEventListener('DOMContentLoaded', function() {
     .details { flex:1; }
     .details h3 { margin:0; font-size:15px; font-family:'Georgia', serif; color:#333; }
     .details p { margin:4px 0 0; font-size:16px; color:#666; }
+	
+/* Basis: Handy */
+body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
+.container { padding: 16px; max-width: 100%; }
+
+/* Buttons/Links gut klickbar */
+button, .btn, a { min-height: 44px; padding: 12px 16px; display: inline-block; }
+
+/* Bilder responsiv */
+img { max-width: 100%; height: auto; }
+
+/* Ab ~768px: Layout verbreitern */
+@media (min-width: 768px) {
+  .container { max-width: 720px; margin: 0 auto; }
+}
+
+/* Ab ~1024px: ggf. zweispaltiges Layout */
+@media (min-width: 1024px) {
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+}
 
     @media (max-width:600px){
       .hero h1 { font-size:50px; }
