@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     body { margin:0; font-family: 'Georgia', serif; background:#f8f8f8; color:#333; line-height:1.6; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; opacity:0; transform: translateY(30px); animation: fadeIn 1.5s forwards; }
-	h2 { font-size: 48px; margin-bottom: 20px; color:#444; font-family: 'Tangerine'; }
+	h2 { font-size: 48px; margin:10px 0; color:#444; font-family: 'Tangerine',cursive; }
     p  { font-size: 18px; margin: 6px 0; }
 
     /* Erte bild */
