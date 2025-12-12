@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     body { margin:0; font-family: 'Georgia', serif; background:#f8f8f8; color:#333; line-height:1.6; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; opacity:0; transform: translateY(30px); animation: fadeIn 1.5s forwards; }
-	h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family:'Tangerine', cursive;; }
+	h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
     p  { font-size: 18px; margin: 6px 0; }
 
     /* HERO */
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .monogram .initials {
-  font-family: 'Tangerine',  cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 100px;
   font-weight: bold;
   letter-spacing: 10px;
@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     display: block;
     height: 15px; /* erzeugt sichtbaren Abstand */
 }
-    .hero h1 { font-size: 52px; margin:0; font-family:'Tangerine',  cursive; }
-    .hero .sub { font-size: 48px; margin:10px 0; font-family:  'Tangerine', cursive; }
+    .hero h1 { font-size: 35px; margin:0; font-family: 'Georgia', serif; }
+    .hero .sub { font-size: px; margin:10px 0; font-family:  'Tangerine', cursive; }
 
     .intro { animation-delay: 0.5s; }
     .location { animation-delay: 1s; }
@@ -115,12 +115,12 @@ document.addEventListener('DOMContentLoaded', function() {
     .event { display:flex; flex-direction:row; align-items:flex-start; gap:20px; }
     .time { font-size:20px; font-weight:bold; color:#555; width:60px; text-align:right; }
     .details { flex:1; }
-    .details h3 { margin:0; font-size:15px; font-family:'Tangerine',  cursive; color:#333; }
+    .details h3 { margin:0; font-size:15px; font-family:'Georgia', serif; color:#333; }
     .details p { margin:4px 0 0; font-size:16px; color:#666; }
 
     @media (max-width:600px){
       .hero h1 { font-size:50px; }
-      .hero .sub { font-size:32px; }
+      .hero .sub { font-size:22px; }
       .time { width:50px; font-size:18px; }
     }
 </style>
@@ -224,4 +224,5 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </section>
 </body>
+</html>
 </html>
