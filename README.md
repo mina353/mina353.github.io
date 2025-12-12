@@ -31,8 +31,8 @@
     h1 { font-size: 56px; color: #444; }
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
     h3 { font-size: 28px; color: #333; }
-	h4 { font-size: 26px; color: #333; }
-    p  { font-size: 22px; margin: 6px 0; color: #333; }
+	h4 { font-size: 26px;margin: 6px 0; color: #333; }
+    p  { font-size: 24px; margin: 6px 0; color: #333; }
 
     /* Fade-in on scroll */
     .animate-on-scroll {
@@ -244,10 +244,9 @@
   </section>
     <section class="location">
     <h2 class="animate-on-scroll">Location</h2>
-	<span class="extra-space1"></span>
 	<h3 class="animate-on-scroll">Aria Event</h3>
 <h4 class="animate-on-scroll">
-        Adresse:
+        Aria Event Adresse:
         <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
            target="_blank"
            rel="noopener noreferrer">
