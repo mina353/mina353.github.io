@@ -175,8 +175,8 @@ h6 { font-size: 30px; margin-bottom: 20px;color: #444; }
       <div class="sub">20/03/2026</div>
     </section>
   </section>
-	<section class="intro">
-		<span class="extra-space1"></span>
+	<section class="hero">
+		
  <h5 class="animate-on-scroll">Ahmad & Mina</h5>
 		<span class="extra-space1"></span>
   </section>
@@ -185,7 +185,7 @@ h6 { font-size: 30px; margin-bottom: 20px;color: #444; }
     <h6 class="animate-on-scroll">Liebe Familie und Freunde,</h6>
     <span class="extra-space2"></span>
     <p class="animate-on-scroll">
-      wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am <strong>20. März 2026 um 16:00 Uhr</strong>strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
+      wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
     </p>
     <span class="extra-space1"></span>
     <p class="animate-on-scroll">
@@ -193,7 +193,7 @@ h6 { font-size: 30px; margin-bottom: 20px;color: #444; }
     </p>
     <span class="extra-space1"></span>
     <p class="animate-on-scroll">
-      Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>strong>.
+      Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>.
     </p>
   </section>
 
