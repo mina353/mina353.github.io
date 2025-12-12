@@ -1,11 +1,7 @@
-
-
 <html lang="de">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-
 body {
     font-family: Arial, sans-serif;
     margin: 50px;
@@ -37,17 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
     elements.forEach(el => observer.observe(el));
 });
 </script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Einladung – Ahmad & Mina</title>
 <style>
     body { margin:0; font-family: 'Georgia', serif; background:#f8f8f8; color:#333; line-height:1.6; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; opacity:0; transform: translateY(30px); animation: fadeIn 1.5s forwards; }
-	h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
+	h2 { font-size: 48px; margin-bottom: 20px; color:#444; font-family: 'Tangerine', cursive; }
     p  { font-size: 18px; margin: 6px 0; }
 
-    /* HERO */
+    /* Erte bild */
     .hero {
       height: 100vh;
       background: url('hero.png') center/cover no-repeat;
@@ -55,14 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
       color:#fff; text-shadow:0 2px 4px rgba(0,0,0,0.6);
       opacity:1; transform:none; animation:none;
     }
-
-
 	
 .monogram {
   margin: 60px auto;
   text-align: center;
 }
-
+/* Damit das Herz weiß bleibt */
 .monogram .initials {
   font-family: 'Playfair Display', serif;
   font-size: 100px;
@@ -70,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
   letter-spacing: 10px;
   color: #fff;
 }
-
 .monogram .symbol {
   font-size: 50px;
   color: #fff;
@@ -83,9 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
   margin-top: 10px;
   color: #fff;
 }
-
-	
-	 
 .extra-space {
     display: block;
     height: 40px; /* erzeugt sichtbaren Abstand */
@@ -98,8 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
     display: block;
     height: 15px; /* erzeugt sichtbaren Abstand */
 }
-    .hero h1 { font-size: 35px; margin:0; font-family: 'Georgia', serif; }
-    .hero .sub { font-size: px; margin:10px 0; font-family:  'Tangerine', cursive; }
+
+    .hero h1 { font-size: 48px; margin:0; font-family: 'Tangerine', serif; }
+    .hero .sub { font-size: 32px; margin:10px 0; font-family:  'Tangerine', cursive; }
 
     .intro { animation-delay: 0.5s; }
     .location { animation-delay: 1s; }
