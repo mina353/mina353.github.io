@@ -32,7 +32,7 @@
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
     h3 { font-size: 28px; color: #333; }
 	h4 { font-size: 24px;margin: 6px 0; color: #333; }
-	h5 { font-size: 44px; margin-bottom: 20px;font-family: 'Yesteryear', serif; color: #444; }
+	h5 { font-size: 44px; margin-bottom: 20px;color: #444; }
     p  { font-size: 24px; margin: 6px 0; color: #333; }
 
     /* Fade-in on scroll */
