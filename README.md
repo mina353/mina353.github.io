@@ -44,60 +44,62 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     body { margin:0; font-family: 'Georgia', serif; background:#f8f8f8; color:#333; line-height:1.6; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; opacity:0; transform: translateY(30px); animation: fadeIn 1.5s forwards; }
-    h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
+	h2 { font-size: 35px; margin-bottom: 20px; color:#444; font-family: 'Pinyon Script', cursive; }
     p  { font-size: 18px; margin: 6px 0; }
 
     /* HERO */
     .hero {
-      min-height: 60vh; /* statt fix 100vh, damit auf kleinen Displays nichts abgeschnitten wird */
+      height: 100vh;
       background: url('hero.png') center/cover no-repeat;
       display:flex; flex-direction:column; justify-content:center; align-items:center;
       color:#fff; text-shadow:0 2px 4px rgba(0,0,0,0.6);
       opacity:1; transform:none; animation:none;
-      padding: 24px; /* etwas Innenabstand für kleine Screens */
     }
 
-    .monogram {
-      margin: 60px auto;
-      text-align: center;
-    }
 
-    .monogram .initials {
-      font-family: 'Parisienne', cursive;
-      /* Responsive Größe: skaliert sinnvoll zwischen Handy und Desktop */
-      font-size: clamp(36px, 10vw, 100px);
-      font-weight: bold;
-      letter-spacing: clamp(2px, 1vw, 10px);
-      color: #fff;
-    }
+	
+.monogram {
+  margin: 60px auto;
+  text-align: center;
+}
 
-    .monogram .symbol {
-      font-size: clamp(24px, 6vw, 50px);
-      color: #fff;
-      margin: 0 10px;
-    }
+.monogram .initials {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #fff;
+}
 
-    .monogram .names {
-      font-family: 'Parisienne', cursive;
-      font-size: clamp(18px, 4.5vw, 28px);
-      margin-top: 10px;
-      color: #fff;
-    }
+.monogram .symbol {
+  font-size: 50px;
+  color: #fff;
+  margin: 0 10px;
+}
 
-    .extra-space {
-        display: block;
-        height: 40px; /* erzeugt sichtbaren Abstand */
-    }
-    .extra-space1 {
-        display: block;
-        height: 25px; /* erzeugt sichtbaren Abstand */
-    }
-    .extra-space2 {
-        display: block;
-        height: 15px; /* erzeugt sichtbaren Abstand */
-    }
-    .hero h1 { font-size: clamp(22px, 6vw, 35px); margin:0; font-family: 'Parisienne', cursive; }
-    .hero .sub { font-size: clamp(16px, 5vw, 20px); margin:10px 0; font-family:'Parisienne', cursive; }
+.monogram .names {
+  font-family: 'Parisienne', cursive;
+  font-size: 28px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+	
+	 
+.extra-space {
+    display: block;
+    height: 40px; /* erzeugt sichtbaren Abstand */
+}
+.extra-space1 {
+    display: block;
+    height: 25px; /* erzeugt sichtbaren Abstand */
+}
+.extra-space2 {
+    display: block;
+    height: 15px; /* erzeugt sichtbaren Abstand */
+}
+    .hero h1 { font-size: 35px; margin:0; font-family: 'Georgia', serif; }
+    .hero .sub { font-size: 48px; margin:10px 0; font-family:  'Tangerine', cursive; }
 
     .intro { animation-delay: 0.5s; }
     .location { animation-delay: 1s; }
@@ -113,46 +115,13 @@ document.addEventListener('DOMContentLoaded', function() {
     .event { display:flex; flex-direction:row; align-items:flex-start; gap:20px; }
     .time { font-size:20px; font-weight:bold; color:#555; width:60px; text-align:right; }
     .details { flex:1; }
-    .details h3 { margin:0; font-size:15px; font-family:'Parisienne', cursive; color:#333; }
+    .details h3 { margin:0; font-size:15px; font-family:'Georgia', serif; color:#333; }
     .details p { margin:4px 0 0; font-size:16px; color:#666; }
 
-    /* Basis: Handy */
-    body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
-    .container { padding: 16px; max-width: 100%; }
-
-    /* Buttons/Links gut klickbar */
-    button, .btn, a { min-height: 44px; padding: 12px 16px; display: inline-block; }
-
-    /* Bilder responsiv */
-    img { max-width: 100%; height: auto; }
-
-    /* Ab ~768px: Layout verbreitern */
-    @media (min-width: 768px) {
-      .container { max-width: 720px; margin: 0 auto; }
-    }
-
-    /* Ab ~1024px: ggf. zweispaltiges Layout */
-    @media (min-width: 1024px) {
-      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    }
-
-    /* Mobile Feintuning */
-    @media (max-width: 600px){
-      /* Hero-Texte angenehm groß, aber nicht übermäßig */
-      .hero h1 { font-size: clamp(24px, 7vw, 32px); }
-      .hero .sub { font-size: clamp(16px, 5.5vw, 22px); }
-
-      /* Monogramm-Abstände auf Handy reduzieren */
-      .monogram { margin: 24px auto; }
-
-      /* Sektionen kompakter auf Handy */
-      section { padding: 24px 16px; max-width: 640px; }
-
-      /* Zeitachse etwas schmaler */
-      .time { width: 50px; font-size: 18px; }
-
-      /* Große Außenränder vermeiden */
-      body { margin: 0; }
+    @media (max-width:600px){
+      .hero h1 { font-size:50px; }
+      .hero .sub { font-size:22px; }
+      .time { width:50px; font-size:18px; }
     }
 </style>
 </head>
@@ -160,50 +129,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Monogramm -->
 <section class="hero">
-  <section class="monogram">
-    <div class="initials">Ahmad<span class="symbol">♥</span>Mina</div>
-    <span class="extra-space1"></span>
-    <div class="sub">Save the Date</div>
-    <div class="sub">20/05/2025</div>
-  </section>
+<section class="monogram">
+  <div class="initials">A<span class="symbol">♥</span>M</div>
+ <div class="sub">Save the Date</div>
+    <div class="sub">20/03/2026</div>
 </section>
-
-<section class="intro">
-    <h2 class="animate-on-scroll">Welcome!</h2>
-    <span class="extra-space1"></span>
-    <p class="animate-on-scroll">Dear Family and Friends,</p>
-    <span class="extra-space2"></span>
-    <p class="animate-on-scroll">We are overjoyed to invite you to celebrate our wedding day with us.This special occasion will be held on March 20, 2025, 
-    at 4:00 PM at the Ariana Event venue. We truly cannot wait to share this unique moment with all of you.</p>
-    <span class="extra-space1"></span>
-    <p class="animate-on-scroll">In order to finalize our planning, we kindly request that you confirm your attendance by early February.</p>
-    <span class="extra-space1"></span>
-    <!-- <p class="animate-on-scroll">Wir freuen uns, eure gesamte Familie an diesem besonderen Tag begrüßen zu dürfen.</p> -->
-    <!-- <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 2 Personen.</p> -->
-    <p class="animate-on-scroll">We are excited to share this special day and welcome your entire family.</p>
-</section>
+ </section>
 
 
- <!--- <section class="intro">
+  <section class="intro">
     <h2 class="animate-on-scroll">Willkommen!</h2>
 	<span class="extra-space1"></span>
     <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
 	<span class="extra-space2"></span>
-	<p class="animate-on-scroll">wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. mai 2025 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
+	<p class="animate-on-scroll">wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. März 2025 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
 	<span class="extra-space1"></span>
 	<p class="animate-on-scroll">Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
 	<span class="extra-space1"></span>
-	<!--<p class="animate-on-scroll">Wir freuen uns, eure gesamte Familie an diesem besonderen Tag begrüßen zu dürfen.</p>-->
-	<!--<p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 2 Personen.</p>
 	<p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 4 Personen.</p>
-  </section>-->
+  </section>
 
   <section class="location">
     <h2 class="animate-on-scroll">Location</h2>
 	<span class="extra-space1"></span>
 	<h3 class="animate-on-scroll">Aria Event</h3>
 <p class="animate-on-scroll">
-        Address:
+        Adresse:
         <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
            target="_blank"
            rel="noopener noreferrer">
@@ -224,38 +175,36 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="event">
         <div class="time">16:00</div>
         <div class="details">
-          <h3 class="animate-on-scroll">Guest Arrival & Reception</h3>
-          <p class="animate-on-scroll">Guests arrive and take their seats.</p>
-		  <!--<h3 class="animate-on-scroll">Einlass & Begrüßung</h3>
-          <p class="animate-on-scroll">Die Gäste treffen ein, nehmen Platz.</p>-->
+		  <h3 class="animate-on-scroll">Einlass & Begrüßung</h3>
+          <p class="animate-on-scroll">Die Gäste treffen ein, nehmen Platz.</p>
         </div>
       </div>
 	  <div class="event">
         <div class="time">17:00</div>
         <div class="details">
-          <!--<h3 class="animate-on-scroll">Tanz mit traditioneller Musik</h3>-->
-		  <h3 class="animate-on-scroll">Traditional Dance & Music</h3>
+          <h3 class="animate-on-scroll">Tanz mit traditioneller Musik</h3>
+		  
         </div>
       </div>
       <div class="event">
         <div class="time">18:00</div>
         <div class="details">
-          <h3 class="animate-on-scroll">Entrance in Afghan Attire</h3>
-		  <!--<h3 class="animate-on-scroll">Ankunft des Brautpaars in Gand Afghani</h3>-->
+       
+		  <h3 class="animate-on-scroll">Ankunft des Brautpaars in Gand Afghani</h3>
         </div>
       </div>
       <div class="event">
         <div class="time">19:30</div>
         <div class="details">
-          <h3 class="animate-on-scroll">Dinner</h3>
-		  <!--<h3 class="animate-on-scroll">Abendessen</h3>-->
+         
+		  <h3 class="animate-on-scroll">Abendessen</h3>
         </div>
       </div>
 	  <div class="event">
         <div class="time">21:30</div>
         <div class="details">
-          <h3 class="animate-on-scroll">The Couple in White Wedding Attire</h3>
-		  <!-- <h3 class="animate-on-scroll">Das Brautpaar im weißen Hochzeitsoutfit</h3>-->
+         
+		 <h3 class="animate-on-scroll">Das Brautpaar im weißen Hochzeitsoutfit</h3>
         </div>
       </div>
 	  <div class="event">
@@ -267,10 +216,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="event">
         <div class="time">1:00</div>
         <div class="details">
-          <h3 class="animate-on-scroll">Conclusion</h3>
-          <p class="animate-on-scroll">Thank you for celebrating with us.</p>
-		  <!--<h3 class="animate-on-scroll">Schluss</h3>
-          <p class="animate-on-scroll">Danke, dass ihr dabei wart – kommt gut nach Hause</p>-->
+          
+		  <h3 class="animate-on-scroll">Schluss</h3>
+          <p class="animate-on-scroll">Danke, dass ihr dabei wart – kommt gut nach Hause</p>
         </div>
       </div>
     </div>
