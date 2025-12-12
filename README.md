@@ -30,7 +30,7 @@
     /* Lesbare Größen und Farben */
     h1 { font-size: 56px; color: #444; }
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
-    h3 { font-size: 28px; color: #333; }
+    h3 { font-size: 22px; color: #333; }
 	h4 { font-size: 24px;margin: 6px 0; color: #333; }
 	h5 { font-size: 44px; margin-bottom: 20px;color: #444; }
     p  { font-size: 24px; margin: 6px 0; color: #333; }
@@ -140,7 +140,7 @@
       .hero h1   { font-size: 50px; }
       .hero .sub { font-size: 28px; }
       h2 { font-size: 40px; }
-      h3 { font-size: 26px; }
+      h3 { font-size: 22px; }
 		h4 { font-size: 26px; }
       p  { font-size: 24px; }
       .time { width: 60px; font-size: 22px; }
@@ -180,9 +180,8 @@
 		<span class="extra-space1"></span>
   </section>
   <section class="intro">
-    <h2 class="animate-on-scroll">Willkommen!</h2>
     <span class="extra-space1"></span>
-    <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
+    <h2 class="animate-on-scroll">Liebe Familie und Freunde,</h2>
     <span class="extra-space2"></span>
     <p class="animate-on-scroll">
       wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. März 2026 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
