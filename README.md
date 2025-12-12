@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Einladung – Ahmad & Mina</title>
 
-  <!-- Google Fonts: Tangerine for all text, Playfair Display for initials -->
+  <!-- Google Fonts: Tangerine für den gesamten Text, Playfair Display für die Initialen -->
   https://fonts.googleapis.com
   https://fonts.gstatic.com
-  https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@400;700&display=swap
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@400;700&
 
   <style>
-    /* Basis: überall Tangerine, außer wo explizit überschrieben */
+    /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
     body {
       margin: 0;
       font-family: 'Tangerine', cursive;
@@ -21,12 +21,12 @@
       line-height: 1.6;
     }
 
-    /* Dezenter Abstand für Standardtexte */
+    /* Dezenter Standardabstand */
     p, h1, h2, h3, h4, h5, h6 {
       margin-bottom: 10px;
     }
 
-    /* Abschnitts-Animation */
+    /* Abschnitts-Layout + Intro-Animation */
     section {
       padding: 40px 20px;
       max-width: 900px;
@@ -36,7 +36,7 @@
       animation: fadeIn 1.5s forwards;
     }
 
-    /* Überschriften & Fließtext – lesbar skaliert */
+    /* Lesbare Größen und Farben */
     h1 { font-size: 56px; color: #444; }
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
     h3 { font-size: 28px; color: #333; }
@@ -63,28 +63,30 @@
       align-items: center;
       color: #fff;
       text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-      opacity: 1; transform: none; animation: none; /* Hero selbst nicht animiert */
+      opacity: 1; 
+      transform: none; 
+      animation: none; /* Hero selbst nicht animiert */
     }
 
     .hero h1 { 
-      font-size: 64px; 
-      margin: 0; 
-      /* bleibt in Tangerine durch body-Regel */
+      font-size: 64px;
+      margin: 0;
+      /* bleibt Tangerine über die body-Regel */
     }
 
     .hero .sub { 
       font-size: 36px; 
       margin: 10px 0; 
-      /* bleibt in Tangerine durch body-Regel */
+      /* bleibt Tangerine über die body-Regel */
     }
 
-    /* Monogramm – NUR die Initialen bleiben Playfair Display */
+    /* Monogramm: Initialen „A ♥ M“ bleiben Playfair Display (Ausnahme) */
     .monogram {
       margin: 60px auto;
       text-align: center;
     }
     .monogram .initials {
-      font-family: 'Playfair Display', serif; /* AUSNAHME: bleibt wie gewünscht */
+      font-family: 'Playfair Display', serif; /* AUSNAHME: nicht Tangerine */
       font-size: 100px;
       font-weight: bold;
       letter-spacing: 10px;
@@ -95,8 +97,173 @@
       color: #fff;
       margin: 0 10px;
     }
-    /* Namen werden jetzt auch in Tangerine angezeigt (durch body),
-       falls du sie weiterhin in Parisienne willst, kann ich diese Zeile wieder setzen. */
+    /* Die Namen darunter nutzen Tangerine (über body), wenn du Parisienne willst, sag Bescheid */
     .monogram .names {
       font-size: 32px;
       margin-top: 10px;
+      color: #fff;
+    }
+
+    /* Zusätzliche Abstände */
+    .extra-space  { display: block; height: 40px; }
+    .extra-space1 { display: block; height: 25px; }
+    .extra-space2 { display: block; height: 15px; }
+
+    /* Karte */
+    .map { width: 100%; border-radius: 8px; margin-top: 16px; }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Elegantes Timing-Layout */
+    .timing-container { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 20px; 
+      border-left: 2px solid #ccc; 
+      padding-left: 20px; 
+    }
+    .event { 
+      display: flex; 
+      flex-direction: row; 
+      align-items: flex-start; 
+      gap: 20px; 
+    }
+    .time { 
+      font-size: 26px; 
+      font-weight: 700; 
+      color: #555; 
+      width: 70px; 
+      text-align: right; 
+    }
+    .details { flex: 1; }
+    .details h3 { margin: 0; } /* bleibt Tangerine */
+    .details p  { margin: 4px 0 0; color: #666; }
+
+    /* Responsive Anpassungen */
+    @media (max-width: 600px) {
+      .hero h1   { font-size: 50px; }
+      .hero .sub { font-size: 28px; }
+      h2 { font-size: 40px; }
+      h3 { font-size: 24px; }
+      p  { font-size: 20px; }
+      .time { width: 60px; font-size: 22px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Optional: deaktivieren, wenn nur einmal animiert werden soll:
+            // observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Monogramm -->
+  <section class="hero">
+    <section class="monogram">
+      <div class="initials">A<span class="symbol">♥</span>M</div>
+      <div class="sub">Save the Date</div>
+      <div class="sub">20/03/2026</div>
+    </section>
+  </section>
+
+  <section class="intro">
+    <h2 class="animate-on-scroll">Willkommen!</h2>
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
+    <span class="extra-space2"></span>
+    <p class="animate-on-scroll">
+      wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am 20. März 2025 um 16:00 Uhr im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
+    </p>
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll">
+      Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.
+    </p>
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll">
+      Sie sind herzlich eingeladen – die Einladung gilt für 4 Personen.
+    </p>
+  </section>
+
+  <section class="location">
+    <h2 class="animate-on-scroll">Location</h2>
+    <span class="extra-space1"></span>
+    <h3 class="animate-on-scroll">Aria Event</h3>
+    <p class="animate-on-scroll">
+      Adresse:
+      https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc
+        Christine‑Touaillon‑Straße 4, 1220 Wien
+      </a>
+    </p>
+    map.png
+  </section>
+
+  <section class="timing">
+    <h2 class="animate-on-scroll">Timing</h2>
+    <span class="extra-space"></span>
+    <span class="extra-space1"></span>
+    <div class="timing-container">
+      <div class="event">
+        <div class="time">16:00</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Einlass &amp; Begrüßung</h3>
+          <p class="animate-on-scroll">Die Gäste treffen ein, nehmen Platz.</p>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">17:00</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Tanz mit traditioneller Musik</h3>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">18:00</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Ankunft des Brautpaars in Gand Afghani</h3>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">19:30</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Abendessen</h3>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">21:30</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Das Brautpaar im weißen Hochzeitsoutfit</h3>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">22:30</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Dance &amp; Party</h3>
+        </div>
+      </div>
+      <div class="event">
+        <div class="time">1:00</div>
+        <div class="details">
+          <h3 class="animate-on-scroll">Schluss</h3>
+          <p class="animate-on-scroll">Danke, dass ihr dabei wart – kommt gut nach Hause</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
