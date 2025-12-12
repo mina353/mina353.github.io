@@ -194,19 +194,6 @@
     </p>
   </section>
 
-  <section class="location">
-    <h2 class="animate-on-scroll">Location</h2>
-    <span class="extra-space1"></span>
-    <h3 class="animate-on-scroll">Aria Event</h3>
-    <p class="animate-on-scroll">
-      Adresse:
-      https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc
-        Christine‑Touaillon‑Straße 4, 1220 Wien
-      </a>
-    </p>
-    map.png
-  </section>
-
   <section class="timing">
     <h2 class="animate-on-scroll">Timing</h2>
     <span class="extra-space"></span>
@@ -258,6 +245,21 @@
       </div>
     </div>
   </section>
+    <section class="location">
+    <h2 class="animate-on-scroll">Location</h2>
+	<span class="extra-space1"></span>
+	<h3 class="animate-on-scroll">Aria Event</h3>
+<p class="animate-on-scroll">
+        Adresse:
+        <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
+           target="_blank"
+           rel="noopener noreferrer">
+           Christine‑Touaillon‑Straße 4, 1220 Wien
+        </a>
+    </p>
+
+    <img src="map.png" alt="Karte zur Location" class="map">
+</section>
 
 </body>
 </html>
