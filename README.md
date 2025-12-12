@@ -60,7 +60,26 @@
       opacity: 1; 
       transform: none; 
       animation: none; /* Hero selbst nicht animiert */
+		position: relative;
     }
+	  
+/* Sanfter Übergang am unteren Rand des Hero-Bildes */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px; /* Übergangshöhe – bei Bedarf anpassen */
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 248, 248, 0) 0%,
+    rgba(248, 248, 248, 0.7) 60%,
+    #f8f8f8 100%
+  );
+}
+
 
     .hero h1 { 
       font-size: 64px;
