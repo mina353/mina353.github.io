@@ -32,8 +32,8 @@
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
     h3 { font-size: 22px; color: #333; }
 	h4 { font-size: 24px;margin: 6px 0; color: #333; }
-	h5 { font-size: 44px; margin-bottom: 20px;color: #444; }
-h6 { font-size: 30px; margin-bottom: 20px;color: #444; } 
+	h5 { position: absolute;top: 50%; left: 50%; font-size: 44px; margin-bottom: 20px;color: #444; }
+	h6 { font-size: 30px; margin-bottom: 20px;color: #444; } 
     p  { font-size: 24px; margin: 6px 0; color: #333; }
 
     /* Fade-in on scroll */
@@ -175,7 +175,7 @@ h6 { font-size: 30px; margin-bottom: 20px;color: #444; }
       <div class="sub">20/03/2026</div>
     </section>
   </section>
-	<section class="hero">
+	<section class="intro">
 		
  <h5 class="animate-on-scroll">Ahmad & Mina</h5>
 		<span class="extra-space1"></span>
