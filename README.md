@@ -4,11 +4,6 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einladung – Ahmad & Mina</title>
-
-  <!-- Google Fonts: Tangerine für den gesamten Text, Playfair Display für die Initialen -->
-  https://fonts.googleapis.com
-  https://fonts.gstatic.com
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@400;700&
 
   <style>
