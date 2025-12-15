@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hochzeit von Ahmad & Mina</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Playfair+Display:wght@700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     
@@ -39,7 +39,7 @@
         h4 { font-size: 24px; margin: 6px 0; color: #333; }
         h5 { text-align: center; font-size: 44px; margin-bottom: 20px; color: #444; }
         h6 { font-size: 30px; margin-bottom: 20px; color: #444; }
-        p  { font-size: 24px; margin: 6px 0; color: #333; }
+        p  { font-size: 30px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
         .persian-line {
