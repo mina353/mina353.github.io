@@ -1,13 +1,13 @@
+
 <html lang="de">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts korrekt laden -->
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wfamily=Playfair+Display:wght@700&display=swap
+  https://fonts.googleapis.com/css2?family=Gulzar&display=swap
 
   <style>
-  <!-- Deine bisherigen Fonts (Beispiel) -->
-  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheetische Zeilen -->
-  <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=le>
-   
-
     /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
     body {
       margin: 0;
@@ -36,17 +36,20 @@
     h1 { font-size: 56px; color: #444; }
     h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
     h3 { font-size: 22px; color: #333; }
-	h4 { font-size: 24px;margin: 6px 0; color: #333; }
-	h5 {  text-align: center; font-size: 44px; margin-bottom: 20px;color: #444; }
-	h6 { font-size: 30px; margin-bottom: 20px;color: #444; } 
+    h4 { font-size: 24px; margin: 6px 0; color: #333; }
+    h5 { text-align: center; font-size: 44px; margin-bottom: 20px; color: #444; }
+    h6 { font-size: 30px; margin-bottom: 20px; color: #444; }
     p  { font-size: 24px; margin: 6px 0; color: #333; }
 
-	  
-.details h7 {
-  margin: 0;
-  font-size: 20px;
-  font-family: 'Gulzar', serif;
- 
+    /* Gulzar für gezielte persische Zeilen */
+    .persian-line {
+      font-family: 'Gulzar', serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+      font-size: 24px;     /* passend zu p */
+      line-height: 1.8;
+      color: #333;
+    }
 
     /* Fade-in on scroll */
     .animate-on-scroll {
@@ -69,41 +72,29 @@
       align-items: center;
       color: #fff;
       text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-      opacity: 1; 
-      transform: none; 
+      opacity: 1;
+      transform: none;
       animation: none; /* Hero selbst nicht animiert */
-		position: relative;
-    }
-	  
-/* Sanfter Übergang am unteren Rand des Hero-Bildes */
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 120px; /* Übergangshöhe – bei Bedarf anpassen */
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(248, 248, 248, 0) 0%,
-    rgba(248, 248, 248, 0.7) 60%,
-    #f8f8f8 100%
-  );
-}
-
-
-    .hero h1 { 
-      font-size: 64px;
-      margin: 0;
-      /* bleibt Tangerine über die body-Regel */
+      position: relative;
     }
 
-    .hero .sub { 
-      font-size: 36px; 
-      margin: 10px 0; 
-      /* bleibt Tangerine über die body-Regel */
+    /* Sanfter Übergang am unteren Rand des Hero-Bildes */
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 120px;
+      pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        rgba(248, 248, 248, 0) 0%,
+        rgba(248, 248, 248, 0.7) 60%,
+        #f8f8f8 100%
+      );
     }
+
+    .hero h1 { font-size: 64px; margin: 0; }
+    .hero .sub { font-size: 36px; margin: 10px 0; }
 
     /* Monogramm: Initialen „A ♥ M“ bleiben Playfair Display (Ausnahme) */
     .monogram {
@@ -111,7 +102,7 @@
       text-align: center;
     }
     .monogram .initials {
-      font-family: 'Playfair Display', serif; /* AUSNAHME: nicht Tangerine */
+      font-family: 'Playfair Display', serif; /* AUSNAHME */
       font-size: 100px;
       font-weight: bold;
       letter-spacing: 10px;
@@ -122,7 +113,6 @@
       color: #fff;
       margin: 0 10px;
     }
-    /* Die Namen darunter nutzen Tangerine (über body), wenn du Parisienne willst, sag Bescheid */
     .monogram .names {
       font-size: 32px;
       margin-top: 10px;
@@ -143,28 +133,28 @@
     }
 
     /* Elegantes Timing-Layout */
-    .timing-container { 
-      display: flex; 
-      flex-direction: column; 
-      gap: 20px; 
-      border-left: 2px solid #ccc; 
-      padding-left: 20px; 
+    .timing-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-left: 2px solid #ccc;
+      padding-left: 20px;
     }
-    .event { 
-      display: flex; 
-      flex-direction: row; 
-      align-items: flex-start; 
-      gap: 20px; 
+    .event {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
     }
-    .time { 
-      font-size: 26px; 
-      font-weight: 700; 
-      color: #555; 
-      width: 70px; 
-      text-align: right; 
+    .time {
+      font-size: 26px;
+      font-weight: 700;
+      color: #555;
+      width: 70px;
+      text-align: right;
     }
     .details { flex: 1; }
-    .details h3 { margin: 0; } /* bleibt Tangerine */
+    .details h3 { margin: 0; } /* bleibt Tangerine, außer du setzt hier Gulzar */
     .details p  { margin: 4px 0 0; color: #666; }
 
     /* Responsive Anpassungen */
@@ -173,7 +163,7 @@
       .hero .sub { font-size: 28px; }
       h2 { font-size: 40px; }
       h3 { font-size: 22px; }
-		h4 { font-size: 26px; }
+      h4 { font-size: 26px; }
       p  { font-size: 24px; }
       .time { width: 60px; font-size: 22px; }
     }
@@ -186,8 +176,6 @@
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            // Optional: deaktivieren, wenn nur einmal animiert werden soll:
-            // observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.2 });
@@ -206,27 +194,38 @@
       <div class="sub">20/03/2026</div>
     </section>
   </section>
-	<section class="intro">
-		
- <h5 class="animate-on-scroll">Ahmad & Mina</h5>
-		<span class="extra-space1"></span>
+
+  <section class="intro">
+    <h5 class="animate-on-scroll">Ahmad &amp; Mina</h5>
+    <span class="extra-space1"></span>
   </section>
+
   <section class="intro">
     <span class="extra-space1"></span>
     <h6 class="animate-on-scroll">Liebe Familie und Freunde,</h6>
     <span class="extra-space2"></span>
-    <p class="animate-on-scroll"> wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
+    <p class="animate-on-scroll">
+      Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am
+      <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
+    </p>
     <span class="extra-space1"></span>
-    <p class="animate-on-scroll">Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt. </p>
+    <p class="animate-on-scroll">
+      Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.
+    </p>
     <span class="extra-space1"></span>
-    <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>.</p>
-	   <span class="extra-space1"></span>
-	   <span class="extra-space1"></span>
-	  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
-		  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
-			  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
+    <p class="animate-on-scroll">
+      Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.
+    </p>
+
+    <!-- Korrekte persische Zeilen mit Gulzar -->
+    <span class="extra-space1"></span>
+    <p class="animate-on-scroll persian-line">این یک خط فارسی با فونت گلزار است.</p>
+    <p class="animate-on-scroll persian-line">این یک خط فارسی دیگر با فونت گلزار است.</p>
+    <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است    <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است.</p>
   </section>
-  
+
+
+
 
 
 
