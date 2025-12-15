@@ -6,32 +6,7 @@
   <!-- Deine bisherigen Fonts (Beispiel) -->
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheetische Zeilen -->
   <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=le>
-    /* Dein bestehendes CSS … */
-
-    /* Klasse für eine einzelne persische Zeile mit Gulzar */
-    .persian-line {
-      font-family: 'Gulzar', serif;  /* überschreibt global Tangerine */
-      direction: rtl;                /* Persisch läuft rechts->links */
-      unicode-bidi: isolate;         /* isoliert die RTL-Laufweite */
-      font-size: 24px;               /* optischer Abgleich zu Tangerine */
-      line-height: 1.8;
-      color: #333;
-    }
-
-    /* Optional: persische Überschrift mit Gulzar */
-    .persian-title {
-      font-family: 'Gulzar', serif;
-      direction: rtl;
-      unicode-bidi: isolate;
-      font-size: 32px;
-      color: #444;
-    }
-
-    /* Hilfsklasse, falls du gemischte Inhalte kapseln möchtest */
-    .rtl {
-      direction: rtl;
-           unicode-bidi: isolate;
-    }
+   
 
     /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
     body {
@@ -65,6 +40,13 @@
 	h5 {  text-align: center; font-size: 44px; margin-bottom: 20px;color: #444; }
 	h6 { font-size: 30px; margin-bottom: 20px;color: #444; } 
     p  { font-size: 24px; margin: 6px 0; color: #333; }
+
+	  
+.details h7 {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Gulzar', serif;
+ 
 
     /* Fade-in on scroll */
     .animate-on-scroll {
@@ -233,39 +215,19 @@
     <span class="extra-space1"></span>
     <h6 class="animate-on-scroll">Liebe Familie und Freunde,</h6>
     <span class="extra-space2"></span>
-    <p class="animate-on-scroll">
-      wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
-    </p>
+    <p class="animate-on-scroll"> wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.</p>
     <span class="extra-space1"></span>
-    <p class="animate-on-scroll">
-      Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.
-    </p>
+    <p class="animate-on-scroll">Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt. </p>
     <span class="extra-space1"></span>
-    <p class="animate-on-scroll">
-      Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>.
-    </p>
+    <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>.</p>
+	   <span class="extra-space1"></span>
+	   <span class="extra-space1"></span>
+	  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
+		  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
+			  <h7 class="animate-on-scroll"> این یک خط فارسی است که فق .</p>
   </section>
   
-<body>
-  <!-- … dein bestehendes Layout … -->
 
-  <section>
-    <h2>Einleitung</h2>
-    <p>Dies ist normaler Text in Tangerine (global).</p>
-
-    <!-- Eine einzelne persische Zeile -->
-    <p class="persian-line">این یک خط فارسی است که فقط hier die Schrift ändert.</p>
-
-    <!-- Beispiel: persische Überschrift -->
-    <h3 class="persian-title">عنوان فارسی با اندازهٔ مناسب</h3>
-
-    <!-- Wenn du gemischte LTR/RTL Inhalte hast: -->
-    <p>
-      Uhrzeit: 18:00 —
-      <span class="persian-line rtl">مراسم ساعت ۱۸ آغاز می‌شود</span>
-      — Adresse siehe unten.
-    </p>
-  </section>
 
 
   <section class="timing">
