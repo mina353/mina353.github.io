@@ -1,11 +1,9 @@
 
-<html lang="de">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Fonts korrekt laden -->
-  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wfamily=Playfair+Display:wght@700&display=swap
-  https://fonts.googleapis.com/css2?family=Gulzar&display=swap
+<head>
+	https://fonts.googleapis.com/css2?family=Gulzar&display=swap
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="de">
 
   <style>
     /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
@@ -214,19 +212,14 @@
     </p>
     <span class="extra-space1"></span>
     <p class="animate-on-scroll">
-      Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.
-    </p>
+      Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.</p>
 
-    <!-- Korrekte persische Zeilen mit Gulzar -->
     <span class="extra-space1"></span>
     <p class="animate-on-scroll persian-line">این یک خط فارسی با فونت گلزار است.</p>
     <p class="animate-on-scroll persian-line">این یک خط فارسی دیگر با فونت گلزار است.</p>
-    <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است    <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است.</p>
+    <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است  
+	<p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است.</p>
   </section>
-
-
-
-
 
 
   <section class="timing">
