@@ -164,7 +164,7 @@
             .hero h1  { font-size: 50px; }
             .hero .sub { font-size: 30px; }
             h2 { font-size: 40px; }
-            h3 { font-size: 33px; }
+            h3 { font-size: 24px; }
             h4 { font-size: 28px; }
             p  { font-size: 24px; }
             .time { width: 60px; font-size: 22px; }
