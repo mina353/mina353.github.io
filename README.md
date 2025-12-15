@@ -13,8 +13,10 @@
             margin: 0;
             font-family: 'Carattere', cursive;
             background: #f8f8f8;
+            font-size: 64px;  
+            letter-spacing: 4px
             color: #333;
-            line-height: 1.6;
+            line-height: 2;
         }
 
         /* Dezenter Standardabstand */
