@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Playfair+Display:wght@700&family=Carattere:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
-            font-family: 'Carattere', cursive;
+            font-family: 'Great Vibes', cursive;
             background: #f8f8f8;
             font-size: 64px;  
             letter-spacing: 4px
