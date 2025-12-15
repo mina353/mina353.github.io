@@ -161,12 +161,12 @@
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
-            .hero h1  { font-size: 58px; }
-            .hero .sub { font-size: 38px; }
-            h2 { font-size: 48px; }
-            h3 { font-size: 36px; }
-            h4 { font-size: 36px; }
-            p  { font-size: 30px; }
+            .hero h1  { font-size: 50px; }
+            .hero .sub { font-size: 30px; }
+            h2 { font-size: 40px; }
+            h3 { font-size: 33px; }
+            h4 { font-size: 28px; }
+            p  { font-size: 24px; }
             .time { width: 60px; font-size: 22px; }
         }
     </style>
