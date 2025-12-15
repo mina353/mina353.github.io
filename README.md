@@ -3,6 +3,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+  <!-- Deine bisherigen Fonts (Beispiel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheetische Zeilen -->
+  <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=le>
+    /* Dein bestehendes CSS … */
+
+    /* Klasse für eine einzelne persische Zeile mit Gulzar */
+    .persian-line {
+      font-family: 'Gulzar', serif;  /* überschreibt global Tangerine */
+      direction: rtl;                /* Persisch läuft rechts->links */
+      unicode-bidi: isolate;         /* isoliert die RTL-Laufweite */
+      font-size: 24px;               /* optischer Abgleich zu Tangerine */
+      line-height: 1.8;
+      color: #333;
+    }
+
+    /* Optional: persische Überschrift mit Gulzar */
+    .persian-title {
+      font-family: 'Gulzar', serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+      font-size: 32px;
+      color: #444;
+    }
+
+    /* Hilfsklasse, falls du gemischte Inhalte kapseln möchtest */
+    .rtl {
+      direction: rtl;
+           unicode-bidi: isolate;
+    }
+
     /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
     body {
       margin: 0;
@@ -215,6 +245,28 @@
       Sie sind herzlich eingeladen – die Einladung gilt für<strong> 4 Personen</strong>.
     </p>
   </section>
+  
+<body>
+  <!-- … dein bestehendes Layout … -->
+
+  <section>
+    <h2>Einleitung</h2>
+    <p>Dies ist normaler Text in Tangerine (global).</p>
+
+    <!-- Eine einzelne persische Zeile -->
+    <p class="persian-line">این یک خط فارسی است که فقط hier die Schrift ändert.</p>
+
+    <!-- Beispiel: persische Überschrift -->
+    <h3 class="persian-title">عنوان فارسی با اندازهٔ مناسب</h3>
+
+    <!-- Wenn du gemischte LTR/RTL Inhalte hast: -->
+    <p>
+      Uhrzeit: 18:00 —
+      <span class="persian-line rtl">مراسم ساعت ۱۸ آغاز می‌شود</span>
+      — Adresse siehe unten.
+    </p>
+  </section>
+
 
   <section class="timing">
     <h2 class="animate-on-scroll">Timing</h2>
