@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
@@ -39,8 +39,9 @@
         h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
         h3 { font-size: 22px; color: #333; }
         h4 { font-size: 28px; margin: 6px 0; color: #333; }
-        h5 { text-align: center; font-size: 44px; margin-bottom: 20px; color: #444; }
+        h5 { text-align: center; font-size: 44px; margin-bottom: 20px; font-family:'Meie Script'; color: #444; }
         h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
+        h8 { font-size: 20px; margin-bottom: 6px; color: #444; }
         p  { font-size: 24px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
@@ -61,7 +62,7 @@
         }
         .animate-on-scroll.visible {
             opacity: 1;
-            transform: translateY(0);
+            transforme: translateY(0);
         }
 
         /* HERO */
@@ -229,7 +230,7 @@
             <div class="time">16:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Einlass</h3>
-                <p class="animate-on-scroll">Die Gäste treffen ein</p>
+                <h8 class="animate-on-scroll">Die Gäste treffen ein</h8>
             </div>
         </div>
         <div class="event">
@@ -260,7 +261,7 @@
             <div class="time">12:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Schluss</h3>
-                <p class="animate-on-scroll">Danke, dass ihr dabei wart</p>
+                <h8 class="animate-on-scroll">Danke, dass ihr dabei wart</h8>
             </div>
         </div>
     </div>
