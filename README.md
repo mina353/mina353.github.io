@@ -21,7 +21,7 @@
 
         /* Dezenter Standardabstand */
         p, h1, h2, h3, h4, h5, h6 {
-            margin-bottom: 10px;
+            margin-bottom: 13px;
         }
 
         /* Abschnitts-Layout + Intro-Animation */
@@ -38,17 +38,17 @@
         h1 { font-size: 56px; color: #444; }
         h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
         h3 { font-size: 22px; color: #333; }
-        h4 { font-size: 24px; margin: 6px 0; color: #333; }
+        h4 { font-size: 28px; margin: 6px 0; color: #333; }
         h5 { text-align: center; font-size: 44px; margin-bottom: 20px; color: #444; }
-        h6 { font-size: 30px; margin-bottom: 20px; color: #444; }
-        p  { font-size: 30px; margin: 6px 0; color: #333; }
+        h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
+        p  { font-size: 24px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
         .persian-line {
             font-family: 'Gulzar', serif;
             direction: rtl;
             unicode-bidi: isolate;
-            font-size: 24px;     /* passend zu p */
+            font-size: 22px;     /* passend zu p */
             line-height: 1.8;
             color: #333;
         }
@@ -149,7 +149,7 @@
             gap: 20px;
         }
         .time {
-            font-size: 26px;
+            font-size: 30px;
             font-weight: 700;
             color: #555;
             width: 70px;
