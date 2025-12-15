@@ -207,16 +207,12 @@
         <span class="extra-space2"></span>
         <p class="animate-on-scroll">
             Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am
-            <strong>20. März 2026 um 16:00 Uhr</strong> im Ariana Event statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
+            <strong>20. März 2026 um 16:00 Uhr</strong> statt. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
         </p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll">
-            Damit wir besser planen können, bitten wir euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.
-        </p>
+        <p class="animate-on-scroll"> Wir bitten euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll">
-            Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.</p>
-
+        <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.</p>
         <span class="extra-space1"></span>
         <p class="animate-on-scroll persian-line">این یک خط فارسی با فونت گلزار است.</p>
         <p class="animate-on-scroll persian-line">این یک خط فارسی دیگر با فونت گلزار است.</p>
@@ -267,7 +263,7 @@
                 </div>
             </div>
             <div class="event">
-                <div class="time">1:00</div>
+                <div class="time">12:00</div>
                 <div class="details">
                     <h3 class="animate-on-scroll">Schluss</h3>
                     <p class="animate-on-scroll">Danke, dass ihr dabei wart – kommt gut nach Hause</p>
