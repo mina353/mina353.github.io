@@ -220,48 +220,51 @@
     </section>
 
 
-    <section class="timing">
-        <h2 class="animate-on-scroll">Timing</h2>
-        <span class="extra-space"></span>
-        <span class="extra-space1"></span>
-        <div class="timing-container">
-            <div class="event">
-                <div class="time">16:00</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Einlass</h3>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">18:00</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll"Brautpaar in Gand Afghani</h3>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">19:30</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Abendessen</h3>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">21:30</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Hochzeits-Outfit</h3>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">22:30</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Dance & Party</h3>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">12:00</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Schluss</h3>
+<section class="timing">
+    <h2 class="animate-on-scroll">Timing</h2>
+    <span class="extra-space"></span>
+    <span class="extra-space1"></span>
+    <div class="timing-container">
+        <div class="event">
+            <div class="time">16:00</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Einlass</h3>
+                <p class="animate-on-scroll">Die Gäste treffen ein</p>
             </div>
         </div>
-    </section>
+        <div class="event">
+            <div class="time">18:00</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Brautpaars in Gand Afghani</h3>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">19:30</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Abendessen</h3>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">21:30</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Hochzeitsoutfit</h3>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">22:30</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Dance & Party</h3>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">12:00</div>
+            <div class="details">
+                <h3 class="animate-on-scroll">Schluss</h3>
+                <p class="animate-on-scroll">Danke, dass ihr dabei wart</p>
+            </div>
+        </div>
+    </div>
+ </section>
     <section class="location">
         <h2 class="animate-on-scroll">Location</h2>
         <span class="extra-space1"></span>
