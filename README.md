@@ -11,7 +11,7 @@
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
-            font-family: 'Tangerine', cursive;
+            font-family: 'Carattere', cursive;
             background: #f8f8f8;
             color: #333;
             line-height: 1.6;
