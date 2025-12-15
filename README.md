@@ -228,20 +228,13 @@
             <div class="event">
                 <div class="time">16:00</div>
                 <div class="details">
-                    <h3 class="animate-on-scroll">Einlass & Begrüßung</h3>
-                    <p class="animate-on-scroll">Die Gäste treffen ein, nehmen Platz.</p>
-                </div>
-            </div>
-            <div class="event">
-                <div class="time">17:00</div>
-                <div class="details">
-                    <h3 class="animate-on-scroll">Tanz mit traditioneller Musik</h3>
+                    <h3 class="animate-on-scroll">Einlass</h3>
                 </div>
             </div>
             <div class="event">
                 <div class="time">18:00</div>
                 <div class="details">
-                    <h3 class="animate-on-scroll">Ankunft des Brautpaars in Gand Afghani</h3>
+                    <h3 class="animate-on-scroll"Brautpaar in Gand Afghani</h3>
                 </div>
             </div>
             <div class="event">
@@ -253,7 +246,7 @@
             <div class="event">
                 <div class="time">21:30</div>
                 <div class="details">
-                    <h3 class="animate-on-scroll">Das Brautpaar im weißen Hochzeitsoutfit</h3>
+                    <h3 class="animate-on-scroll">Hochzeits-Outfit</h3>
                 </div>
             </div>
             <div class="event">
@@ -266,8 +259,6 @@
                 <div class="time">12:00</div>
                 <div class="details">
                     <h3 class="animate-on-scroll">Schluss</h3>
-                    <p class="animate-on-scroll">Danke, dass ihr dabei wart – kommt gut nach Hause</p>
-                </div>
             </div>
         </div>
     </section>
@@ -275,13 +266,13 @@
         <h2 class="animate-on-scroll">Location</h2>
         <span class="extra-space1"></span>
         <h3 class="animate-on-scroll">Aria Event</h3>
-        <h4 class="animate-on-scroll">
+        <p class="animate-on-scroll">
             <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
                 target="_blank"
                 rel="noopener noreferrer">
                 Christine‑Touaillon‑Straße 4, 1220 Wien
             </a>
-        </h4>
+        </p>
 
         <img src="map.png" alt="Karte zur Location" class="map">
     </section>
