@@ -204,7 +204,7 @@
 
     <section class="intro">
         <span class="extra-space1"></span>
-        <h6 class="animate-on-scroll">Liebe Familie und Freunde,</h6>
+        <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
         <span class="extra-space2"></span>
         <p class="animate-on-scroll">
             Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Dieser besondere Tag findet am
