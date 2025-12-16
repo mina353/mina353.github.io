@@ -8,7 +8,7 @@
     
     <style>
     .grossschrift {
-    font-size: 1.5em; /* Macht den Text 1,5-mal größer als normal */
+    font-size: 0.6 em; /* Macht den Text 1,5-mal größer als normal */
 }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
@@ -266,7 +266,7 @@
     </div>
  </section>
     <section class="location">
-        <h2 class="animate-on-scroll"><span class="grossschrift">Location </span>/ Ariana Event </h2>
+        <h2 class="animate-on-scroll">Location <span class="grossschrift">/ Ariana Event  </span></h2>
         <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
           <img src="map.png" alt="Karte zur Location" class="map">
         <p class="animate-on-scroll">
