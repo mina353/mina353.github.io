@@ -151,7 +151,7 @@
         .event {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;;
             gap: 20px;
         }
         .time {
@@ -162,7 +162,7 @@
             text-align: right;
         }
         .details { flex: 1; }
-        .details h3 { margin: 0; } /* bleibt Tangerine, außer du setzt hier Gulzar */
+        .details h3 { margin: 0; } 
         .details p  { margin: 4px 0 0; color: #666; }
 
         /* Responsive Anpassungen */
