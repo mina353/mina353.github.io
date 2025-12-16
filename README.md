@@ -211,11 +211,11 @@
         <span class="extra-space1"></span>
         <p class="animate-on-scroll"> Wir bitten euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.</p>
+        <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 4 Personen.</p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll persian-line">,به همراه خانواده‌های عزیزمان</p>
-        <p class="animate-on-scroll persian-line"> شما را با کمال افتخار و شادی دعوت می‌کنیم</p>
-        <p class="animate-on-scroll persian-line">.تا در جشن آغاز زندگی مشترکمان کنار ماباشید</p>
+        <p class="animate-on-scroll persian-line">به  همراه  خانواده‌های  عزیزمان,</p>
+        <p class="animate-on-scroll persian-line"> شما  را  با  کمال  افتخار  و  شادی  دعوت  می‌کنیم</p>
+        <p class="animate-on-scroll persian-line">تا  در  جشن  آغاز  زندگی  مشترکمان  کنار  ماباشید.</p>
     </section>
 
 
@@ -275,9 +275,6 @@
         </p>
         <span class="extra-space1"></span>
     </section>
-
-</body>
-</html>
 
 </body>
 </html>
