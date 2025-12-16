@@ -67,7 +67,7 @@
 
         /* HERO */
         .hero {
-            height: 100vh;
+            height: 70vh;
             background: url('hero.png') center/cover no-repeat;
             display: flex;
             flex-direction: column;
