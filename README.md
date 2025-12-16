@@ -7,8 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-    .grossschrift {
-    font-size: 0.6 em; /* Macht den Text 1,5-mal größer als normal */
+    .kleinschrift {
+    font-size: 30px; /* Deutlich kleiner als h2 (48px) */
+    font-weight: 400; /* Weniger fett (optional) */
+    color: #666; /* Etwas dezenter (optional) */
+    margin-left: -5px; /* Korrigiert den Abstand zum Schrägstrich (optional) */
 }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
@@ -266,7 +269,8 @@
     </div>
  </section>
     <section class="location">
-        <h2 class="animate-on-scroll">Location <span class="grossschrift">/ Ariana Event  </span></h2>
+        <h2 class="animate-on-scroll">Location 
+            <span class="kleinschrift">/ Ariana Event</span></h2>
         <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
           <img src="map.png" alt="Karte zur Location" class="map">
         <p class="animate-on-scroll">
