@@ -229,7 +229,6 @@
             <div class="time">16:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Einlass</h3>
-                <h8 class="animate-on-scroll">Die Gäste treffen ein</h8>
             </div>
         </div>
         <div class="event">
@@ -260,7 +259,6 @@
             <div class="time">12:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Schluss</h3>
-                <h8 class="animate-on-scroll">Danke, dass ihr dabei wart</h8>
             </div>
         </div>
     </div>
