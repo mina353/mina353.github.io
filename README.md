@@ -263,7 +263,7 @@
     </div>
  </section>
     <section class="location">
-      <h2 class="animate-on-scroll">Location/   <h3 class="animate-on-scroll">Ariana Event</h2>
+      <h2 class="animate-on-scroll">Location/   <h3 class="animate-on-scroll">Ariana Event</h2></h3>
         <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
           <img src="map.png" alt="Karte zur Location" class="map">
         <p class="animate-on-scroll">
@@ -274,7 +274,6 @@
             </a>
         </p>
         <span class="extra-space1"></span>
-    </section>
-
+</section>
 </body>
 </html>
