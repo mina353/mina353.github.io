@@ -111,7 +111,7 @@
         }
         .monogram .initials {
             font-family: 'Playfair Display', serif; /* AUSNAHME */
-            font-size: 100px;
+            font-size: 80px;
             font-weight: bold;
             letter-spacing: 10px;
             color: #fff;
