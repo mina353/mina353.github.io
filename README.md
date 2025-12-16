@@ -2,19 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Einladung</title> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Globale Basis */
+        /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
             font-family: 'Great Vibes', cursive;
             background: #f8f8f8;
-            font-size: 64px; /* Dies ist sehr groß, wird aber durch spezifischere Regeln überschrieben */ 
-            letter-spacing: 4px; /* Semikolon hier hinzugefügt */
+            font-size: 64px;  
+            letter-spacing: 4px
             color: #333;
             line-height: 2;
         }
@@ -49,7 +48,7 @@
             font-family: 'Gulzar', serif;
             direction: rtl;
             unicode-bidi: isolate;
-            font-size: 22px;     
+            font-size: 22px;     /* passend zu p */
             line-height: 1.8;
             color: #333;
         }
@@ -62,14 +61,13 @@
         }
         .animate-on-scroll.visible {
             opacity: 1;
-            transform: translateY(0); /* Tippfehler 'transforme' korrigiert */
+            transforme: translateY(0);
         }
 
         /* HERO */
         .hero {
-            height: 70vh; /* NEU: Höhe auf 70% der Viewport-Höhe reduziert */
+            height: 70vh;
             background: url('hero.png') center/cover no-repeat;
-            background-position: center bottom; /* NEU: Bild unten fixiert, schneidet oben ab */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -100,13 +98,13 @@
         .hero h1 { font-size: 64px; margin: 0; }
         .hero .sub { font-size: 36px; margin: 10px 0; }
 
-        /* Monogramm: Initialen „A ♥ M“ */
+        /* Monogramm: Initialen „A ♥ M“ bleiben Playfair Display (Ausnahme) */
         .monogram {
             margin: 60px auto;
             text-align: center;
         }
         .monogram .initials {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Playfair Display', serif; /* AUSNAHME */
             font-size: 100px;
             font-weight: bold;
             letter-spacing: 10px;
@@ -158,30 +156,11 @@
             text-align: right;
         }
         .details { flex: 1; }
-        .details h3 { margin: 0; } 
+        .details h3 { margin: 0; } /* bleibt Tangerine, außer du setzt hier Gulzar */
         .details p  { margin: 4px 0 0; color: #666; }
 
-        /* Responsive Anpassungen (Handy-Ansicht) */
+        /* Responsive Anpassungen */
         @media (max-width: 600px) {
-            
-            /* NEU: HERO Höhe reduzieren für Handy */
-            .hero {
-                height: 60vh; 
-            }
-            /* NEU: Monogramm (A ♥ M) anpassen */
-            .monogram .initials {
-                font-size: 60px; 
-                letter-spacing: 5px; 
-            }
-            .monogram .symbol {
-                font-size: 30px; 
-                margin: 0 5px;
-            }
-            .monogram .names {
-                font-size: 24px;
-            }
-            
-            /* Vorhandene mobile Anpassungen */
             .hero h1  { font-size: 50px; }
             .hero .sub { font-size: 30px; }
             h2 { font-size: 40px; }
@@ -210,10 +189,11 @@
 <body>
 
     <section class="hero">
-        <div class="monogram"> <div class="initials">A<span class="symbol">♥</span>M</div>
+        <section class="monogram">
+            <div class="initials">A<span class="symbol">♥</span>M</div>
             <div class="sub">Save the Date</div>
             <div class="sub">20/03/2026</div>
-        </div>
+        </section>
     </section>
 
     <section class="intro">
@@ -248,7 +228,6 @@
             <div class="time">16:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Einlass</h3>
-                <h8 class="animate-on-scroll">Die Gäste treffen ein</h8>
             </div>
         </div>
         <div class="event">
@@ -279,26 +258,26 @@
             <div class="time">12:00</div>
             <div class="details">
                 <h3 class="animate-on-scroll">Schluss</h3>
-                <h8 class="animate-on-scroll">Danke, dass ihr dabei wart</h8>
             </div>
         </div>
     </div>
-</section>
+ </section>
+    <section class="location">
+      <h2 class="animate-on-scroll">Location/   <h3 class="animate-on-scroll">Ariana Event</h2>
+        <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
+          <img src="map.png" alt="Karte zur Location" class="map">
+        <p class="animate-on-scroll">
+            <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
+                target="_blank"
+                rel="noopener noreferrer">
+                Christine‑Touaillon‑Straße 4, 1220 Wien
+            </a>
+        </p>
+        <span class="extra-space1"></span>
+    </section>
 
-<section class="location">
-    <h2 class="animate-on-scroll">Location</h2> 
-    <span class="extra-space1"></span>
-    <h3 class="animate-on-scroll">Ariana Event</h3>
-    <p class="animate-on-scroll">
-        <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
-            target="_blank"
-            rel="noopener noreferrer">
-            Christine‑Touaillon‑Straße 4, 1220 Wien
-        </a>
-    </p>
-
-    <img src="map.png" alt="Karte zur Location" class="map">
-</section>
+</body>
+</html>
 
 </body>
 </html>
