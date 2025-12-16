@@ -264,9 +264,9 @@
     </div>
  </section>
     <section class="location">
-        <h2 class="animate-on-scroll">Location</h2>
-        <span class="extra-space1"></span>
-        <h3 class="animate-on-scroll">Aria Event</h3>
+        <h2 class="animate-on-scroll">Location: Ariana Event</h2>
+        <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
+          <img src="map.png" alt="Karte zur Location" class="map">
         <p class="animate-on-scroll">
             <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
                 target="_blank"
@@ -274,8 +274,7 @@
                 Christine‑Touaillon‑Straße 4, 1220 Wien
             </a>
         </p>
-
-        <img src="map.png" alt="Karte zur Location" class="map">
+        <span class="extra-space1"></span>
     </section>
 
 </body>
