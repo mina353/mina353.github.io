@@ -3,19 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-    @font-face {
-            font-family: 'IranNastaliq';
-            src: url('IranNastaliq.woff2') format('woff2'),
-                 url('IranNastaliq.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
@@ -52,14 +43,15 @@
         h8 { font-size: 20px; margin-bottom: 6px; color: #444; }
         p  { font-size: 24px; margin: 6px 0; color: #333; }
 
+        /* Gulzar für gezielte persische Zeilen */
         .persian-line {
-            font-family: 'IranNastaliq', serif; /* GEÄNDERT */
-            direction: rtl;
-            unicode-bidi: isolate;
-            font-size: 28px;     /* Leicht vergrößert, da Nastaliq oft feiner ist */
-            line-height: 2.2; /* Line-height für bessere Lesbarkeit von Nastaliq erhöht */
-            color: #333;
-        }
+            font-family: 'Gulzar', serif;
+            direction: rtl;
+            unicode-bidi: isolate;
+            font-size: 22px;     /* passend zu p */
+            line-height: 1.8;
+            color: #333;
+        }
 
         /* Fade-in on scroll */
         .animate-on-scroll {
@@ -221,9 +213,9 @@
         <span class="extra-space1"></span>
         <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 4 Personen.</p>
         <span class="extra-space1"></span>
-       <p class="animate-on-scroll persian-line">به  همراه  خانواده‌های  عزیزمان,</p>
-        <p class="animate-on-scroll persian-line"> شما  را  با  کمال  افتخار  و  شادی  دعوت  می‌کنیم</p>
-        <p class="animate-on-scroll persian-line">تا  در  جشن  آغاز  زندگی  مشترکمان  کنار  ماباشید.</p>
+        <p class="animate-on-scroll persian-line">به  همراه  خانواده‌های  عزیزمان,</p>
+        <p class="animate-on-scroll persian-line"> شما  را  با  کمال  افتخار  و  شادی  دعوت  می‌کنیم</p>
+        <p class="animate-on-scroll persian-line">تا  در  جشن  آغاز  زندگی  مشترکمان  کنار  ماباشید.</p>
     </section>
 
 
