@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title> Einladung</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
+        /* Globale Basis */
         body {
             margin: 0;
             font-family: 'Great Vibes', cursive;
             background: #f8f8f8;
-            font-size: 64px;  
-            letter-spacing: 4px
+            font-size: 64px; /* Dies ist sehr groß, wird aber durch spezifischere Regeln überschrieben */ 
+            letter-spacing: 4px; /* Semikolon hier hinzugefügt */
             color: #333;
             line-height: 2;
         }
@@ -49,7 +50,7 @@
             font-family: 'Gulzar', serif;
             direction: rtl;
             unicode-bidi: isolate;
-            font-size: 22px;     /* passend zu p */
+            font-size: 22px;     
             line-height: 1.8;
             color: #333;
         }
@@ -62,13 +63,14 @@
         }
         .animate-on-scroll.visible {
             opacity: 1;
-            transforme: translateY(0);
+            transform: translateY(0); /* Tippfehler 'transforme' korrigiert */
         }
 
         /* HERO */
         .hero {
-            height: 70vh;
+            height: 70vh; /* NEU: Höhe auf 70% der Viewport-Höhe reduziert */
             background: url('hero.png') center/cover no-repeat;
+            background-position: center bottom; /* NEU: Bild unten fixiert, schneidet oben ab */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,13 +101,13 @@
         .hero h1 { font-size: 64px; margin: 0; }
         .hero .sub { font-size: 36px; margin: 10px 0; }
 
-        /* Monogramm: Initialen „A ♥ M“ bleiben Playfair Display (Ausnahme) */
+        /* Monogramm: Initialen „A ♥ M“ */
         .monogram {
             margin: 60px auto;
             text-align: center;
         }
         .monogram .initials {
-            font-family: 'Playfair Display', serif; /* AUSNAHME */
+            font-family: 'Playfair Display', serif;
             font-size: 100px;
             font-weight: bold;
             letter-spacing: 10px;
@@ -128,154 +130,4 @@
         .extra-space2 { display: block; height: 15px; }
 
         /* Karte */
-        .map { width: 100%; border-radius: 8px; margin-top: 16px; }
-
-        /* Keyframes */
-        @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Elegantes Timing-Layout */
-        .timing-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-left: 2px solid #ccc;
-            padding-left: 20px;
-        }
-        .event {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .time {
-            font-size: 30px;
-            font-weight: 700;
-            color: #555;
-            width: 70px;
-            text-align: right;
-        }
-        .details { flex: 1; }
-        .details h3 { margin: 0; } /* bleibt Tangerine, außer du setzt hier Gulzar */
-        .details p  { margin: 4px 0 0; color: #666; }
-
-        /* Responsive Anpassungen */
-        @media (max-width: 600px) {
-            .hero h1  { font-size: 50px; }
-            .hero .sub { font-size: 30px; }
-            h2 { font-size: 40px; }
-            h3 { font-size: 24px; }
-            h4 { font-size: 28px; }
-            p  { font-size: 24px; }
-            .time { width: 60px; font-size: 22px; }
-        }
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            elements.forEach(el => observer.observe(el));
-        });
-    </script>
-</head>
-<body>
-
-    <section class="hero">
-        <section class="monogram">
-            <div class="initials">A<span class="symbol">♥</span>M</div>
-            <div class="sub">Save the Date</div>
-            <div class="sub">20/03/2026</div>
-        </section>
-    </section>
-
-    <section class="intro">
-        <h5 class="animate-on-scroll">Ahmad & Mina</h5>
-        <span class="extra-space1"></span>
-    </section>
-
-    <section class="intro">
-        <span class="extra-space1"></span>
-        <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
-        <span class="extra-space2"></span>
-        <p class="animate-on-scroll">
-            Wir freuen uns sehr, euch am <strong>20. März 2026 um 16:00 </strong> Uhr zu unserer Hochzeit einzuladen. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
-        </p>
-        <span class="extra-space1"></span>
-        <p class="animate-on-scroll"> Wir bitten euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
-        <span class="extra-space1"></span>
-        <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für <strong>4 Personen</strong>.</p>
-        <span class="extra-space1"></span>
-        <p class="animate-on-scroll persian-line">این یک خط فارسی با فونت گلزار است.</p>
-        <p class="animate-on-scroll persian-line">این یک خط فارسی دیگر با فونت گلزار است.</p>
-        <p class="animate-on-scroll persian-line">و این سومین خط فارسی با فونت گلزار است.</p>
-    </section>
-
-
-<section class="timing">
-    <h2 class="animate-on-scroll">Timing</h2>
-    <span class="extra-space"></span>
-    <span class="extra-space1"></span>
-    <div class="timing-container">
-        <div class="event">
-            <div class="time">16:00</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Einlass</h3>
-            </div>
-        </div>
-        <div class="event">
-            <div class="time">18:00</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Brautpaars in Gand Afghani</h3>
-            </div>
-        </div>
-        <div class="event">
-            <div class="time">19:30</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Abendessen</h3>
-            </div>
-        </div>
-        <div class="event">
-            <div class="time">21:30</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Hochzeitsoutfit</h3>
-            </div>
-        </div>
-        <div class="event">
-            <div class="time">22:30</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Dance & Party</h3>
-            </div>
-        </div>
-        <div class="event">
-            <div class="time">12:00</div>
-            <div class="details">
-                <h3 class="animate-on-scroll">Schluss</h3>
-            </div>
-        </div>
-    </div>
- </section>
-    <section class="location">
-      <h2 class="animate-on-scroll">Location/   <h3 class="animate-on-scroll">Ariana Event</h2>
-        <!--<h3 class="animate-on-scroll">Aria Event</h3>-->
-          <img src="map.png" alt="Karte zur Location" class="map">
-        <p class="animate-on-scroll">
-            <a href="https://maps.app.goo.gl/VR3mmCs7T4rjWXsy7?g_st=ipc"
-                target="_blank"
-                rel="noopener noreferrer">
-                Christine‑Touaillon‑Straße 4, 1220 Wien
-            </a>
-        </p>
-        <span class="extra-space1"></span>
-    </section>
-
-</body>
-</html>
+        .map { width: 100%; border-radius:
