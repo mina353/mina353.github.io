@@ -170,6 +170,7 @@
       transform: rotate(-90deg);
       transform-origin: center;
       line-height: 1;
+      font-weight: 700;
       white-space: nowrap;      /* verhindert Zeilenumbruch in der Uhrzeit */
       text-decoration: underline; /* Unterstreichung der Uhrzeit selbst */
       text-underline-offset: 3px; /* Abstand der Unterstreichung (falls unterstützt) */
@@ -177,7 +178,7 @@
     }
 
 
-.details h3 { margin: 0; color: #666;}
+.details h3 { margin: 0; color: #666;font-weight: 300; font-size: 24px;}
 .details p {
       margin: 4px 0 0;
       color: #777;
@@ -196,7 +197,7 @@
             p  { font-size: 24px; }
            .time {font-size: 22px; }
            
-            .timing-container { gap: 20px; }
+            .timing-container { gap: 26px; }
               .event { column-gap: 14px; }
 
            }
