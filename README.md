@@ -21,8 +21,8 @@
             margin: 0;
             font-family: 'Great Vibes', cursive;
             background: #f8f8f8;
-            font-size: 24px;  
-            letter-spacing: 4px;
+            font-size: 64px;  
+            /*letter-spacing: 4px;*/
             color: #333;
             line-height: 2;
         }
