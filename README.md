@@ -16,10 +16,10 @@
         .grosschrift {
             font-size: 30px;
         }
-        /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
+    
         body {
             margin: 0;
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Kapakana', cursive;
             background: #ffffff;
             font-size: 64px;  
             /*letter-spacing: 4px;*/
