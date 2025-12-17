@@ -114,9 +114,9 @@
             text-align: center;
         }
         .monogram .initials {
-            font-family: 'Parisienne',cursive; /* AUSNAHME */
+            font-family: 'Playfair Display',serif ; /* AUSNAHME */
             font-size: 70px;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 5px;
             color: #fff;
         }
