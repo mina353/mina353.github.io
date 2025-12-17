@@ -13,8 +13,8 @@
     color: #666; /* Etwas dezenter
     margin-left: -5px; /* Korrigiert den Abstand zum Schrägstrich 
 }
-.großschrift {
-    font-size: 28px; /* Deutlich größer als p (24px) */
+.grosschrift {
+    font-size: 30px; /* Deutlich größer als p (24px) */
 }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
@@ -161,19 +161,11 @@
 .time {
     font-size: 30px;
     font-weight: 700;
-    color: #555;
-    
-    /* Erhöhen Sie die minimale Breite, damit der Text (z.B. "16:00")
-       sauber am rechten Rand der Uhrzeitspalte ausgerichtet ist,
-       besonders bei der großen Schriftgröße. */
-    min-width: 90px; 
-    
-    /* Verhindert, dass die Uhrzeit schrumpft oder umbricht */
+    color: #555; 
     white-space: nowrap;
     flex-shrink: 0;
-    
     /* text-align: right; beibehalten für die Ausrichtung an der vertikalen Linie */
-    text-align: right; 
+    text-align: left; 
 }
 .details { 
     flex: 1; 
@@ -225,7 +217,7 @@
 
     <section class="intro">
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll"><span class="großschrift">Liebe Familie und Freunde,</span></p>
+        <p class="animate-on-scroll"><span class="grosschrift">Liebe Familie und Freunde,</span></p>
         <span class="extra-space2"></span>
         <p class="animate-on-scroll">
             Wir freuen uns sehr, euch am <strong>20. März 2026 um 16:00 </strong> Uhr zu unserer Hochzeit einzuladen. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
