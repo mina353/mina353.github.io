@@ -171,6 +171,7 @@
   height: 8px;
   background: #888;
   border-radius: 50%;
+  }
 
         .time {
             font-size: 30px;
@@ -191,6 +192,7 @@
             h4 { font-size: 28px; }
             p  { font-size: 24px; }
            /* .time { width: 60px; font-size: 22px; }*/
+           }
             
  .event {
     flex-direction: column;
