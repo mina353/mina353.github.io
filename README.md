@@ -222,7 +222,7 @@
 /* ======================================================= */
 .details h3 { 
     margin: 0; 
-    font-size: 2.0em; 
+    font-size: 0.8em; 
 }
 .details { 
     flex: 1; 
