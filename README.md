@@ -15,7 +15,7 @@
 }
 .grosschrift {
     font-size: 30px; /* Deutlich größer als p (24px) */
-}
+    }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
@@ -145,43 +145,44 @@
 
        /* Elegantes Timing-Layout */
         .timing-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-left: 2px solid #ccc;
-            padding-left: 20px;
+        display: grid;
+        gap: 20px;
+        max-width: 600px;
+        margin: 40px auto;
         }
-       /*.event {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-        }*/
-        
-.event {
-  position: relative;
-}
-.event::before {
-  content: "";
-  position: absolute;
-  left: -11px;   /* passt zur border-left + padding */
-  top:  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  background: #888;
-  border-radius: 50%;
-  }
+       .event {
+       display: flex;
+       flex-direction: column; /* Uhrzeit oben, Titel darunter */
+       align-items: center;    /* horizontal zentriert */
+       text-align: center;     /* Text mittig */
+       gap: 6px;
+       padding: 8px 0;
+        }
 
-        .time {
-            font-size: 30px;
-            font-weight: 700;
-            color: #555;
-            width: 80px; /*Feste Breite*/
-            text-align: right;
-        }
+        
+    .time {
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;   /* schwarz */
+      line-height: 1.1;
+    }
+
         .details { flex: 1; }
-        .details h3 { margin: 0; } 
+        
+.details h3 {
+      margin: 0;
+      color: #666;   /* grau */
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+.details p {
+      margin: 4px 0 0;
+      color: #777;
+      font-size: 14px;
+    }
+
+
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
@@ -193,18 +194,6 @@
             p  { font-size: 24px; }
            /* .time { width: 60px; font-size: 22px; }*/
            }
-            
- .event {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .time {
-    text-align: left;
-    width: auto;
-    font-size: 24px;
-  }
-
-        }
     </style>
 
     <script>
