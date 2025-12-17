@@ -7,15 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-    .kleinschrift {
-    font-size: 30px; /* Deutlich kleiner als h2 (48px) */
-    font-weight: 400; /* Weniger fett
-    color: #666; /* Etwas dezenter
-    margin-left: -5px; /* Korrigiert den Abstand zum Schrägstrich 
-}
-.grosschrift {
-    font-size: 30px; /* Deutlich größer als p (24px) */
-    }
+        .kleinschrift {
+            font-size: 30px;
+            font-weight: 400; 
+            color: #666; 
+            margin-left: -5px; 
+        }
+        .grosschrift {
+            font-size: 30px;
+        }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
