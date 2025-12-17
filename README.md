@@ -152,7 +152,6 @@
     gap: 20px;
     padding-top: 20px;
     position: relative;
-    /* Ihre Hintergrundfarbe */
 }
 
 /* Vertikale Linie (unverändert) */
@@ -168,45 +167,36 @@
 }
 
 /* ======================================================= */
-/* 2. ZEIT-ELEMENTE (.time) - WICHTIGE ÄNDERUNGEN HIER     */
+/* 2. ZEIT-ELEMENTE  */
 /* ======================================================= */
 .time {
     grid-column: 1 / 2; 
-    
-    /* *** ÄNDERUNG: Setzt die Zeit in die gesamte Höhe der Zelle *** */
-    align-self: stretch; 
-    
-    /* *** ÄNDERUNG: Zentriert den Inhalt (die Zeit) vertikal *** */
-    display: flex;
+    align-self: stretch;     /* *** ÄNDERUNG: Setzt die Zeit in die gesamte Höhe der Zelle *** */
+    display: flex;          /* *** ÄNDERUNG: Zentriert den Inhalt (die Zeit) vertikal *** */
     flex-direction: column;
     justify-content: center; 
-    
-    text-align: right;
+    text-align: left;
     z-index: 1; 
-
-    /* Ihre Schriftart, Größe und Farbe für die Uhrzeit */
     font-size: 30px; 
-    font-weight: 700;
+    font-weight: 900;
     color: #555;
     /* transform: translateY(-5px); ENTFERNT */
 }
 
 
 /* ======================================================= */
-/* 3. EVENT-CONTAINER (.event) & MARKER (angepasst)        */
+/* 3. EVENT-CONTAINER  */
 /* ======================================================= */
 .event {
     grid-column: 2 / 3; 
     position: relative;
     padding-left: 30px; 
-    /* margin-bottom auf dem event-Container entfernt, 
-       um den Grid-Gap für den Abstand zu nutzen */
 }
 
 .details { 
     /* Hinzugefügt: Stellt sicher, dass das Detail-Div auch den 
        gesamten Zellenraum einnimmt, falls es nur ein <h3> enthält */
-    min-height: 40px; 
+    min-height: 30px; 
 }
 
 
@@ -217,7 +207,6 @@
     left: 0; 
     top: 50%; /* *** ÄNDERUNG: Jetzt vertikal zentriert in der Zelle *** */
     transform: translate(-50%, -50%); /* Zentriert den Kreis perfekt */
-    
     width: 15px;
     height: 15px;
     border-radius: 50%;
