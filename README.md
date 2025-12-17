@@ -149,7 +149,7 @@
     .timing-container {
       display: flex;
       flex-direction: column;
-      gap: 30px;         
+      gap: 34px;         
       max-width: 680px;   
       margin: 0 auto;    
     }
@@ -173,11 +173,11 @@
       white-space: nowrap;      /* verhindert Zeilenumbruch in der Uhrzeit */
       text-decoration: underline; /* Unterstreichung der Uhrzeit selbst */
       text-underline-offset: 3px; /* Abstand der Unterstreichung (falls unterstützt) */
-      font-size: 24px;
+      font-size: 28px;
     }
 
 
-.details h3 { margin: 0; }
+.details h3 { margin: 0; color: #666;}
 .details p {
       margin: 4px 0 0;
       color: #777;
