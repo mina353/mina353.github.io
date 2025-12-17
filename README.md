@@ -173,7 +173,7 @@
       margin: 0;
       color: #666;   /* grau */
       font-weight: 600;
-      font-size: 18px;
+      font-size: 26px;
     }
     
 .details p {
