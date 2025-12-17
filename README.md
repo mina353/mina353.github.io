@@ -25,6 +25,7 @@
             /*letter-spacing: 4px;*/
             color: #333;
             line-height: 2;
+            letter-spacing: 2px;
         }
 
         /* Dezenter Standardabstand */
@@ -59,7 +60,7 @@
             font-size: 24px;     /* passend zu p */
             line-height: 1.8;
             color: #333;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
         }
 
         /* Fade-in on scroll */
