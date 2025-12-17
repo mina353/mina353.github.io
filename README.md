@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Einladung</title> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Meie Script&family=Parisienne&family=Playfair+Display:wght@700&family=Great Vibes:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         .kleinschrift {
@@ -114,7 +114,7 @@
             text-align: center;
         }
         .monogram .initials {
-            font-family: 'Playfair Display', serif; /* AUSNAHME */
+            font-family: 'Parisienne', serif; /* AUSNAHME */
             font-size: 70px;
             font-weight: bold;
             letter-spacing: 10px;
