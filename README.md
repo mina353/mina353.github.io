@@ -144,36 +144,41 @@
         }
 
        /* Elegantes Timing-Layout */
-        .timing-container {
-        display: grid;
-        gap: 20px;
-        max-width: 600px;
-        margin: 40px auto;
-        }
-       .event {
-       display: flex;
-       flex-direction: column; /* Uhrzeit oben, Titel darunter */
-       align-items: center;    /* horizontal zentriert */
-       text-align: center;     /* Text mittig */
-       gap: 6px;
-       padding: 8px 0;
-        }
+        
+    .timing-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;         
+      max-width: 680px;   
+      margin: 0 auto;    
+    }
+
+       
+    .event {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      column-gap: 18px;
+    }
+
 
         
+   
     .time {
-      font-size: 30px;
-      font-weight: 700;
-      color: #000;   /* schwarz */
-      line-height: 1.1;
+      display: inline-block;    /* nötig für Rotation + Unterlinie */
+      transform: rotate(-90deg);
+      transform-origin: center;
+      line-height: 1;
+      white-space: nowrap;      /* verhindert Zeilenumbruch in der Uhrzeit */
+      text-decoration: underline; /* Unterstreichung der Uhrzeit selbst */
+      text-underline-offset: 3px; /* Abstand der Unterstreichung (falls unterstützt) */
     }
+
 
         .details { flex: 1; }
         
 .details h3 {
       margin: 0;
-      color: #666;   /* grau */
-      font-weight: 600;
-      font-size: 26px;
     }
     
 .details p {
@@ -193,6 +198,10 @@
             h4 { font-size: 28px; }
             p  { font-size: 24px; }
            /* .time { width: 60px; font-size: 22px; }*/
+           
+            .timing-container { gap: 20px; }
+              .event { column-gap: 14px; }
+
            }
     </style>
 
