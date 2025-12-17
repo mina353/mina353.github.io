@@ -26,7 +26,6 @@
             /*letter-spacing: 4px;*/
             color: #333;
             line-height: 2;
-            letter-spacing: 0.3px;
         }
 
         /* Dezenter Standardabstand */
@@ -45,13 +44,13 @@
         }
 
         /* Lesbare Größen und Farben */
-        h1 { font-size: 56px; color: #444; }
-        h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
-        h3 { font-size: 22px; color: #333; }
-        h4 { font-size: 28px; margin: 6px 0; color: #333; }
+        h1 { font-size: 56px;font-weight: 400; color: #444; }
+        h2 { font-size: 48px; margin-bottom: 20px;font-weight: 400; color: #444; }
+        h3 { font-size: 22px;font-weight: 400; color: #333; }
+        h4 { font-size: 28px; margin: 6px 0;font-weight: 400; color: #333; }
         h5 { text-align: center; font-size: 68px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
-        h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
-        p  { font-size: 26px; margin: 6px 0; color: #333; }
+        h6 { font-size: 26px; margin-bottom: 6px; font-weight: 400;color: #444; }
+        p  { font-size: 26px; margin: 6px 0; font-weight: 400;color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
         .persian-line {
