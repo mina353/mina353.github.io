@@ -149,7 +149,7 @@
     .timing-container {
       display: flex;
       flex-direction: column;
-      gap: 24px;         
+      gap: 30px;         
       max-width: 680px;   
       margin: 0 auto;    
     }
