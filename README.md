@@ -143,92 +143,102 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-       /* ======================================================= */
-/* 1. CONTAINER & LINIE (GRID-SETUP)                       */
+      /* ======================================================= */
+/* 1. CONTAINER & LINIE (unverändert)                      */
 /* ======================================================= */
 .timing-container {
     display: grid;
-    /* Definiert zwei Spalten: 80px für die Uhrzeit und den Rest (1fr) für Details */
     grid-template-columns: 80px 1fr; 
     gap: 20px;
     padding-top: 20px;
     position: relative;
-    
-    /* HIER HINTERGRUNDFARBE ODER WEITERE CONTAINER-STILE EINFÜGEN */
-    /* Beispiel: background-color: #fcfcfc; */
+    /* Ihre Hintergrundfarbe */
 }
 
-/* Vertikale Linie (Ersetzt den border-left aus Ihrem ersten Beispiel) */
+/* Vertikale Linie (unverändert) */
 .timing-container::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    /* Positioniert die Linie genau nach der 80px breiten Zeitspalte */
     left: 80px; 
     width: 2px;
-    
-    /* HIER DIE FARBE IHRER VERTIKALEN LINIE EINFÜGEN */
     background-color: #ccc; 
     z-index: 0;
 }
 
 /* ======================================================= */
-/* 2. ZEIT-ELEMENTE (.time)                                */
+/* 2. ZEIT-ELEMENTE (.time) - WICHTIGE ÄNDERUNGEN HIER     */
 /* ======================================================= */
 .time {
-    /* Setzt die Zeit in die erste Spalte */
     grid-column: 1 / 2; 
-    /* Richtet die Zeit vertikal an der Oberkante des Titels aus */
-    align-self: start; 
-    text-align: right;
     
-    /* Verschiebt die Uhrzeit leicht nach oben, um sie perfekt an den Titel anzugleichen */
-    transform: translateY(-5px); 
+    /* *** ÄNDERUNG: Setzt die Zeit in die gesamte Höhe der Zelle *** */
+    align-self: stretch; 
+    
+    /* *** ÄNDERUNG: Zentriert den Inhalt (die Zeit) vertikal *** */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+    text-align: right;
     z-index: 1; 
 
-    /* HIER IHRE SCHRIFTART, GRÖSSE UND FARBE FÜR DIE UHRZEIT EINFÜGEN */
+    /* Ihre Schriftart, Größe und Farbe für die Uhrzeit */
     font-size: 30px; 
     font-weight: 700;
     color: #555;
-    /* Beispiel: font-family: 'Ihre-Gewuenschte-Schrift'; */
+    /* transform: translateY(-5px); ENTFERNT */
 }
 
 
 /* ======================================================= */
-/* 3. EVENT-CONTAINER (.event) & MARKER                    */
+/* 3. EVENT-CONTAINER (.event) & MARKER (angepasst)        */
 /* ======================================================= */
 .event {
-    /* Setzt die Details in die zweite Spalte */
     grid-column: 2 / 3; 
     position: relative;
-    padding-left: 30px; /* Platz für den runden Marker an der Linie */
-    margin-bottom: 20px; 
+    padding-left: 30px; 
+    /* margin-bottom auf dem event-Container entfernt, 
+       um den Grid-Gap für den Abstand zu nutzen */
 }
 
-/* Der goldene/helle Kreis/Marker auf der vertikalen Linie */
+.details { 
+    /* Hinzugefügt: Stellt sicher, dass das Detail-Div auch den 
+       gesamten Zellenraum einnimmt, falls es nur ein <h3> enthält */
+    min-height: 40px; 
+}
+
+
+/* Der Marker muss weiterhin oben ausgerichtet sein, um auf der Linie zu liegen */
 .event::before {
     content: '';
     position: absolute;
-    /* left: 0 ist der Start der zweiten Spalte (direkt an der Linie) */
     left: 0; 
-    top: 5px; /* Vertikale Position auf der Linie */
+    top: 50%; /* *** ÄNDERUNG: Jetzt vertikal zentriert in der Zelle *** */
+    transform: translate(-50%, -50%); /* Zentriert den Kreis perfekt */
+    
     width: 15px;
     height: 15px;
     border-radius: 50%;
     
-    /* HIER DIE FARBE IHRES MARKERS EINFÜGEN */
+    /* Ihre Farben */
     background-color: #e0e0e0; 
-    
-    /* Rand, um sich vom Hintergrund abzuheben (z.B. Weiß) */
     border: 2px solid #fff; 
-    transform: translateX(-50%); /* Zentriert den Kreis auf der Linie */
     z-index: 2;
+}
+
+/* ======================================================= */
+/* 4. DETAIL-TITEL (h3)                                    */
+/* ======================================================= */
+.details h3 { 
+    margin: 0; 
+    font-size: 2.0em; 
 }
 .details { 
     flex: 1; 
 }
-.details h3 { margin: 0; } 
+
 .details p { margin: 4px 0 0; color: #666; }
 
         /* Responsive Anpassungen */
