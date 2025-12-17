@@ -143,29 +143,87 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Elegantes Timing-Layout */
+       /* ======================================================= */
+/* 1. CONTAINER & LINIE (GRID-SETUP)                       */
+/* ======================================================= */
 .timing-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* Definiert zwei Spalten: 80px für die Uhrzeit und den Rest (1fr) für Details */
+    grid-template-columns: 80px 1fr; 
     gap: 20px;
-    border-left: 2px solid #ccc;
-    padding-left: 20px;
+    padding-top: 20px;
+    position: relative;
+    
+    /* HIER HINTERGRUNDFARBE ODER WEITERE CONTAINER-STILE EINFÜGEN */
+    /* Beispiel: background-color: #fcfcfc; */
 }
-.event {
-    display: flex;
-    flex-direction: row;
-    /* *** WICHTIGE ÄNDERUNG: Richtet die Elemente oben aus! *** */
-    align-items: flex-start; 
-    gap: 20px;
+
+/* Vertikale Linie (Ersetzt den border-left aus Ihrem ersten Beispiel) */
+.timing-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* Positioniert die Linie genau nach der 80px breiten Zeitspalte */
+    left: 80px; 
+    width: 2px;
+    
+    /* HIER DIE FARBE IHRER VERTIKALEN LINIE EINFÜGEN */
+    background-color: #ccc; 
+    z-index: 0;
 }
+
+/* ======================================================= */
+/* 2. ZEIT-ELEMENTE (.time)                                */
+/* ======================================================= */
 .time {
-    font-size: 30px;
+    /* Setzt die Zeit in die erste Spalte */
+    grid-column: 1 / 2; 
+    /* Richtet die Zeit vertikal an der Oberkante des Titels aus */
+    align-self: start; 
+    text-align: right;
+    
+    /* Verschiebt die Uhrzeit leicht nach oben, um sie perfekt an den Titel anzugleichen */
+    transform: translateY(-5px); 
+    z-index: 1; 
+
+    /* HIER IHRE SCHRIFTART, GRÖSSE UND FARBE FÜR DIE UHRZEIT EINFÜGEN */
+    font-size: 30px; 
     font-weight: 700;
-    color: #555; 
-    white-space: nowrap;
-    flex-shrink: 0;
-    /* text-align: right; beibehalten für die Ausrichtung an der vertikalen Linie */
-    text-align: left; 
+    color: #555;
+    /* Beispiel: font-family: 'Ihre-Gewuenschte-Schrift'; */
+}
+
+
+/* ======================================================= */
+/* 3. EVENT-CONTAINER (.event) & MARKER                    */
+/* ======================================================= */
+.event {
+    /* Setzt die Details in die zweite Spalte */
+    grid-column: 2 / 3; 
+    position: relative;
+    padding-left: 30px; /* Platz für den runden Marker an der Linie */
+    margin-bottom: 20px; 
+}
+
+/* Der goldene/helle Kreis/Marker auf der vertikalen Linie */
+.event::before {
+    content: '';
+    position: absolute;
+    /* left: 0 ist der Start der zweiten Spalte (direkt an der Linie) */
+    left: 0; 
+    top: 5px; /* Vertikale Position auf der Linie */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+    /* HIER DIE FARBE IHRES MARKERS EINFÜGEN */
+    background-color: #e0e0e0; 
+    
+    /* Rand, um sich vom Hintergrund abzuheben (z.B. Weiß) */
+    border: 2px solid #fff; 
+    transform: translateX(-50%); /* Zentriert den Kreis auf der Linie */
+    z-index: 2;
 }
 .details { 
     flex: 1; 
