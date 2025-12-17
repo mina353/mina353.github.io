@@ -48,7 +48,7 @@
         h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
         h3 { font-size: 22px; color: #333; }
         h4 { font-size: 28px; margin: 6px 0; color: #333; }
-        h5 { text-align: center; font-size: 44px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
+        h5 { text-align: center; font-size: 90px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
         h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
         p  { font-size: 24px; margin: 6px 0; color: #333; }
 
@@ -106,7 +106,7 @@
         }
 
         .hero h1 { font-size: 64px; margin: 0; }
-        .hero .sub { font-size: 36px; margin: 10px 0; }
+        .hero .sub { font-size: 30px; margin: 10px 0; }
 
         /* Monogramm: Initialen „A ♥ M“ bleiben Playfair Display (Ausnahme) */
         .monogram {
@@ -190,7 +190,7 @@
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
             .hero h1  { font-size: 50px; }
-            .hero .sub { font-size: 30px; }
+            .hero .sub { font-size: 24px; }
             h2 { font-size: 40px; }
             h3 { font-size: 24px; }
             h4 { font-size: 28px; }
@@ -229,7 +229,6 @@
 
     <section class="intro">
         <h5 class="animate-on-scroll">Ahmad & Mina</h5>
-        <span class="extra-space1"></span>
     </section>
 
     <section class="intro">
