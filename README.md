@@ -9,9 +9,12 @@
     <style>
     .kleinschrift {
     font-size: 30px; /* Deutlich kleiner als h2 (48px) */
-    font-weight: 400; /* Weniger fett (optional) */
-    color: #666; /* Etwas dezenter (optional) */
-    margin-left: -5px; /* Korrigiert den Abstand zum Schrägstrich (optional) */
+    font-weight: 400; /* Weniger fett
+    color: #666; /* Etwas dezenter
+    margin-left: -5px; /* Korrigiert den Abstand zum Schrägstrich 
+}
+.großschrift {
+    font-size: 28px; /* Deutlich größer als p (24px) */
 }
         /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
@@ -142,28 +145,34 @@
 
         /* Elegantes Timing-Layout */
         .timing-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-left: 2px solid #ccc;
-            padding-left: 20px;
-        }
-        .event {
-            display: flex;
-            flex-direction: row;
-            align-items: center;;
-            gap: 20px;
-        }
-        .time {
-            font-size: 30px;
-            font-weight: 700;
-            color: #555;
-            width: 70px;
-            text-align: right;
-        }
-        .details { flex: 1; }
-        .details h3 { margin: 0; } 
-        .details p  { margin: 4px 0 0; color: #666; }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Vertikale Linie und Padding beibehalten */
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+}
+.event {
+    display: flex;
+    flex-direction: row;
+    /* Stellt sicher, dass die Elemente in der Mitte ausgerichtet sind, falls `.details` höher ist */
+    align-items: center; 
+    gap: 20px;
+}
+.time {
+    font-size: 30px;
+    font-weight: 700;
+    color: #555;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+    text-align: right; 
+    padding-right: 10px; 
+}
+.details { 
+    flex: 1; 
+}
+.details h3 { margin: 0; } 
+.details p { margin: 4px 0 0; color: #666; }
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
@@ -209,7 +218,7 @@
 
     <section class="intro">
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll">Liebe Familie und Freunde,</p>
+        <p class="animate-on-scroll"><span class="großschrift">Liebe Familie und Freunde,</span></p>
         <span class="extra-space2"></span>
         <p class="animate-on-scroll">
             Wir freuen uns sehr, euch am <strong>20. März 2026 um 16:00 </strong> Uhr zu unserer Hochzeit einzuladen. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
