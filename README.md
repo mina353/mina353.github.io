@@ -144,29 +144,36 @@
         }
 
         /* Elegantes Timing-Layout */
-        .timing-container {
+.timing-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Vertikale Linie und Padding beibehalten */
     border-left: 2px solid #ccc;
     padding-left: 20px;
 }
 .event {
     display: flex;
     flex-direction: row;
-    /* Stellt sicher, dass die Elemente in der Mitte ausgerichtet sind, falls `.details` höher ist */
-    align-items: center; 
+    /* *** WICHTIGE ÄNDERUNG: Richtet die Elemente oben aus! *** */
+    align-items: flex-start; 
     gap: 20px;
 }
 .time {
     font-size: 30px;
     font-weight: 700;
     color: #555;
-    white-space: nowrap; 
-    flex-shrink: 0; 
+    
+    /* Erhöhen Sie die minimale Breite, damit der Text (z.B. "16:00")
+       sauber am rechten Rand der Uhrzeitspalte ausgerichtet ist,
+       besonders bei der großen Schriftgröße. */
+    min-width: 90px; 
+    
+    /* Verhindert, dass die Uhrzeit schrumpft oder umbricht */
+    white-space: nowrap;
+    flex-shrink: 0;
+    
+    /* text-align: right; beibehalten für die Ausrichtung an der vertikalen Linie */
     text-align: right; 
-    padding-right: 10px; 
 }
 .details { 
     flex: 1; 
