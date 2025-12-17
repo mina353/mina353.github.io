@@ -20,7 +20,7 @@
         body {
             margin: 0;
             font-family: 'Great Vibes', cursive;
-            background: #f8f8f8;
+            background: #ffffff;
             font-size: 64px;  
             /*letter-spacing: 4px;*/
             color: #333;
@@ -151,7 +151,11 @@
       flex-direction: column;
       gap: 34px;         
       max-width: 680px;   
-      margin: 0 auto;    
+      margin: 0 auto;  
+      
+        background: url('blum1.png') no-repeat right bottom; 
+          background-size: 180px auto;
+
     }
 
        
