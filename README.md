@@ -60,6 +60,7 @@
             font-size: 24px;     /* passend zu p */
             line-height: 1.8;
             color: #333;
+            word-spacing: 5px
         }
 
         /* Fade-in on scroll */
