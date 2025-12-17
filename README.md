@@ -143,92 +143,29 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-      /* ======================================================= */
-/* 1. CONTAINER & LINIE (unverändert)                      */
-/* ======================================================= */
-.timing-container {
-    display: grid;
-    grid-template-columns: 80px 1fr; 
-    gap: 20px;
-    padding-top: 20px;
-    position: relative;
-}
-
-/* Vertikale Linie (unverändert) */
-.timing-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 80px; 
-    width: 2px;
-    background-color: #ccc; 
-    z-index: 0;
-}
-
-/* ======================================================= */
-/* 2. ZEIT-ELEMENTE  */
-/* ======================================================= */
-.time {
-    grid-column: 1 / 2; 
-    align-self: stretch;     /* *** ÄNDERUNG: Setzt die Zeit in die gesamte Höhe der Zelle *** */
-    display: flex;          /* *** ÄNDERUNG: Zentriert den Inhalt (die Zeit) vertikal *** */
-    flex-direction: column;
-    justify-content: center; 
-    text-align: left;
-    z-index: 1; 
-    font-size: 30px; 
-    font-weight: 900;
-    color: #555;
-    /* transform: translateY(-5px); ENTFERNT */
-}
-
-
-/* ======================================================= */
-/* 3. EVENT-CONTAINER  */
-/* ======================================================= */
-.event {
-    grid-column: 2 / 3; 
-    position: relative;
-    padding-left: 30px; 
-}
-
-.details { 
-    /* Hinzugefügt: Stellt sicher, dass das Detail-Div auch den 
-       gesamten Zellenraum einnimmt, falls es nur ein <h3> enthält */
-    min-height: 30px; 
-}
-
-
-/* Der Marker muss weiterhin oben ausgerichtet sein, um auf der Linie zu liegen */
-.event::before {
-    content: '';
-    position: absolute;
-    left: 0; 
-    top: 50%; /* *** ÄNDERUNG: Jetzt vertikal zentriert in der Zelle *** */
-    transform: translate(-50%, -50%); /* Zentriert den Kreis perfekt */
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    
-    /* Ihre Farben */
-    background-color: #e0e0e0; 
-    border: 2px solid #fff; 
-    z-index: 2;
-}
-
-/* ======================================================= */
-/* 4. DETAIL-TITEL (h3)                                    */
-/* ======================================================= */
-.details h3 { 
-    margin: 0; 
-    font-size: 0.8em; 
-}
-.details { 
-    flex: 1; 
-}
-
-.details p { margin: 4px 0 0; color: #666; }
+       /* Elegantes Timing-Layout */
+        .timing-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-left: 2px solid #ccc;
+            padding-left: 20px;
+        }
+        .event {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        .time {
+            font-size: 30px;
+            font-weight: 700;
+            color: #555;
+            width: 80px; /*Feste Breite*/
+            text-align: right;
+        }
+        .details { flex: 1; }
+        .details h3 { margin: 0; } 
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
