@@ -223,16 +223,18 @@
         <section class="monogram">
             <!--div class="initials">A | M</div-->
             <div class="initials">
-            <span class="letter">A</span>
-            <svg class="heart" width="40" height="40" viewBox="0 0 32 29.6">
-                <path fill="white" d="M23.6,0c-2.9,0-5.4,1.7-6.6,4.1C15.8,1.7,13.3,0,10.4,0
-                    C4.7,0,0,4.7,0,10.4c0,6.2,5.3,11.3,13.3,18.4l2.7,2.3l2.7-2.3
-                    C26.7,21.7,32,16.6,32,10.4C32,4.7,27.3,0,23.6,0z"/>
-            </svg>
+                <span class="letter">A</span>
+                <svg class="heart" width="40" height="40" viewBox="0 0 32 29.6">
+                    <path fill="none" stroke="white" stroke-width="2"
+            d="M23.6,0c-2.9,0-5.4,1.7-6.6,4.1C15.8,1.7,13.3,0,10.4,0
+            C4.7,0,0,4.7,0,10.4c0,6.2,5.3,11.3,13.3,18.4l2.7,2.3l2.7-2.3
+            C26.7,21.7,32,16.6,32,10.4C32,4.7,27.3,0,23.6,0z"/>
+                </svg>
                 <span class="letter">M</span>
             </div>
-            <div class="sub">Save the Date</div>
-            <div class="sub">20/03/2026</div>
+<div class="sub">Save the Date</div>
+<div class="sub">20/03/2026</div>
+
         </section>
     </section>
 
