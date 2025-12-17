@@ -165,7 +165,7 @@
 
         
    
-    <!--.time {
+    .time {
       display: inline-block;    /* nötig für Rotation + Unterlinie */
       transform: rotate(-90deg);
       transform-origin: center;
@@ -175,31 +175,7 @@
       text-decoration: underline; /* Unterstreichung der Uhrzeit selbst */
       text-underline-offset: 3px; /* Abstand der Unterstreichung (falls unterstützt) */
       font-size: 28px;
-    }-->
-    
-.time {
-  position: relative;
-  display: inline-block;
-  transform: rotate(-90deg);
-  transform-origin: center;
-  line-height: 1;
-  font-weight: 700;
-  white-space: nowrap;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-size: 28px;
-  padding: 40px; /* Platz für Bild */
-}
-
-.time::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('blum1.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.35; /* Bild transparent */
-  z-index: -1; /* hinter  z-index: -1; /* hinter dem Text *
-}
+    }
 
 
 .details h3 { margin: 0; color: #666;font-weight: 300; font-size: 24px;}
@@ -245,17 +221,9 @@
 <body>
     <section class="hero">
         <section class="monogram">
-            <!--div class="initials">A | M</div-->
-            <div class="initials">
-                <section class="monogram">
-                    <div class="initials">A | M</div>
-                    <div class="sub">Save the Date</div>
-                    <div class="sub">20/03/2026</div>
-                </section>
-            </div>
-<div class="sub">Save the Date</div>
-<div class="sub">20/03/2026</div>
-
+            <div class="initials">A | M</div>
+            <div class="sub">Save the Date</div>
+            <div class="sub">20/03/2026</div>
         </section>
     </section>
 
