@@ -114,10 +114,10 @@
             text-align: center;
         }
         .monogram .initials {
-            font-family: 'Parisienne', serif; /* AUSNAHME */
+            font-family: 'Parisienne',cursive; /* AUSNAHME */
             font-size: 70px;
-            font-weight: bold;
-            letter-spacing: 10px;
+            font-weight: 300;
+            letter-spacing: 5px;
             color: #fff;
         }
         .monogram .symbol {
