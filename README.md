@@ -219,10 +219,9 @@
     </script>
 </head>
 <body>
-/*♥*/
     <section class="hero">
         <section class="monogram">
-            <div class="initials">A<span class="symbol">|</span>M</div>
+            <div class="initials">A | M</div>
             <div class="sub">Save the Date</div>
             <div class="sub">20/03/2026</div>
         </section>
