@@ -16,16 +16,16 @@
         .grosschrift {
             font-size: 30px;
         }
-    
+        /* Globale Basis: überall Tangerine (außer gezielte Ausnahmen) */
         body {
             margin: 0;
-            font-family: 'Kapakana', cursive;
+            font-family: 'Great Vibes', cursive;
             background: #ffffff;
-            font-weight: 400;
-            font-size: 128px;  
+            font-size: 64px;  
             /*letter-spacing: 4px;*/
             color: #333;
             line-height: 2;
+            letter-spacing: 0.3px;
         }
 
         /* Dezenter Standardabstand */
@@ -44,13 +44,13 @@
         }
 
         /* Lesbare Größen und Farben */
-        h1 { font-size: 56px;font-weight: 400; color: #444; }
-        h2 { font-size: 48px; margin-bottom: 20px;font-weight: 400; color: #444; }
-        h3 { font-size: 22px;font-weight: 400; color: #333; }
-        h4 { font-size: 28px; margin: 6px 0;font-weight: 400; color: #333; }
+        h1 { font-size: 56px; color: #444; }
+        h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
+        h3 { font-size: 22px; color: #333; }
+        h4 { font-size: 28px; margin: 6px 0; color: #333; }
         h5 { text-align: center; font-size: 68px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
-        h6 { font-size: 26px; margin-bottom: 6px; font-weight: 400;color: #444; }
-        p  { font-size: 26px; margin: 6px 0; font-weight: 400;color: #333; }
+        h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
+        p  { font-size: 24px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
         .persian-line {
@@ -193,16 +193,16 @@
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
-            .hero h1  { font-size: 56px; font-weight: 400;}
-            .hero .sub { font-size: 26px; font-weight: 400;}
-            h2 { font-size: 40px;font-weight: 400; }
-            h3 { font-size: 35px;font-weight: 400; }
-            h4 { font-size: 35px; font-weight: 400;}
-            p  { font-size: 34px;font-weight: 400; }
-           .time {font-size: 34px; }
+            .hero h1  { font-size: 50px; }
+            .hero .sub { font-size: 24px; }
+            h2 { font-size: 40px; }
+            h3 { font-size: 24px; }
+            h4 { font-size: 28px; }
+            p  { font-size: 24px; }
+           .time {font-size: 22px; }
            
-            .timing-container { gap: 34px;font-weight: 400; }
-              .event { column-gap: 30px; }
+            .timing-container { gap: 26px; }
+              .event { column-gap: 14px; }
 
            }
     </style>
