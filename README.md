@@ -22,7 +22,7 @@
             font-family: 'Kapakana', cursive;
             background: #ffffff;
             font-weight: 400;
-            font-size: 64px;  
+            font-size: 128px;  
             /*letter-spacing: 4px;*/
             color: #333;
             line-height: 2;
@@ -193,16 +193,16 @@
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
-            .hero h1  { font-size: 56px; }
-            .hero .sub { font-size: 26px; }
-            h2 { font-size: 40px; }
-            h3 { font-size: 24px; }
-            h4 { font-size: 28px; }
-            p  { font-size: 24px; }
-           .time {font-size: 22px; }
+            .hero h1  { font-size: 56px; font-weight: 400;}
+            .hero .sub { font-size: 26px; font-weight: 400;}
+            h2 { font-size: 40px;font-weight: 400; }
+            h3 { font-size: 35px;font-weight: 400; }
+            h4 { font-size: 35px; font-weight: 400;}
+            p  { font-size: 34px;font-weight: 400; }
+           .time {font-size: 34px; }
            
-            .timing-container { gap: 26px; }
-              .event { column-gap: 14px; }
+            .timing-container { gap: 34px;font-weight: 400; }
+              .event { column-gap: 30px; }
 
            }
     </style>
