@@ -56,9 +56,10 @@
             font-family: 'Gulzar', serif;
             direction: rtl;
             unicode-bidi: isolate;
-            font-size: 22px;     /* passend zu p */
+            font-size: 24px;     /* passend zu p */
             line-height: 1.8;
             color: #333;
+            letter-spacing: 4px;
         }
 
         /* Fade-in on scroll */
