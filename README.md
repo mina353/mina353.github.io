@@ -21,8 +21,8 @@
             margin: 0;
             font-family: 'Great Vibes', cursive;
             background: #f8f8f8;
-            font-size: 64px;  
-            letter-spacing: 4px
+            font-size: 24px;  
+            letter-spacing: 4px;
             color: #333;
             line-height: 2;
         }
@@ -49,7 +49,6 @@
         h4 { font-size: 28px; margin: 6px 0; color: #333; }
         h5 { text-align: center; font-size: 44px; margin-bottom: 20px; font-family:'Meie Script'; color: #444; }
         h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
-        h8 { font-size: 20px; margin-bottom: 6px; color: #444; }
         p  { font-size: 24px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
@@ -70,7 +69,7 @@
         }
         .animate-on-scroll.visible {
             opacity: 1;
-            transforme: translateY(0);
+            transform: translateY(0);
         }
 
         /* HERO */
@@ -172,15 +171,11 @@
       white-space: nowrap;      /* verhindert Zeilenumbruch in der Uhrzeit */
       text-decoration: underline; /* Unterstreichung der Uhrzeit selbst */
       text-underline-offset: 3px; /* Abstand der Unterstreichung (falls unterstützt) */
+      font-size: 24px;
     }
 
 
-        .details { flex: 1; }
-        
-.details h3 {
-      margin: 0;
-    }
-    
+.details h3 { margin: 0; }
 .details p {
       margin: 4px 0 0;
       color: #777;
@@ -197,7 +192,7 @@
             h3 { font-size: 24px; }
             h4 { font-size: 28px; }
             p  { font-size: 24px; }
-           /* .time { width: 60px; font-size: 22px; }*/
+           .time {font-size: 22px; }
            
             .timing-container { gap: 20px; }
               .event { column-gap: 14px; }
