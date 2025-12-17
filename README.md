@@ -151,12 +151,27 @@
             border-left: 2px solid #ccc;
             padding-left: 20px;
         }
-        .event {
+       /*.event {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 20px;
-        }
+        }*/
+        
+.event {
+  position: relative;
+}
+.event::before {
+  content: "";
+  position: absolute;
+  left: -11px;   /* passt zur border-left + padding */
+  top:  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #888;
+  border-radius: 50%;
+
         .time {
             font-size: 30px;
             font-weight: 700;
@@ -175,7 +190,18 @@
             h3 { font-size: 24px; }
             h4 { font-size: 28px; }
             p  { font-size: 24px; }
-            .time { width: 60px; font-size: 22px; }
+           /* .time { width: 60px; font-size: 22px; }*/
+            
+ .event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .time {
+    text-align: left;
+    width: auto;
+    font-size: 24px;
+  }
+
         }
     </style>
 
