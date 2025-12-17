@@ -21,6 +21,7 @@
             margin: 0;
             font-family: 'Kapakana', cursive;
             background: #ffffff;
+            font-weight: 400;
             font-size: 64px;  
             /*letter-spacing: 4px;*/
             color: #333;
@@ -50,7 +51,7 @@
         h4 { font-size: 28px; margin: 6px 0; color: #333; }
         h5 { text-align: center; font-size: 68px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
         h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
-        p  { font-size: 24px; margin: 6px 0; color: #333; }
+        p  { font-size: 26px; margin: 6px 0; color: #333; }
 
         /* Gulzar für gezielte persische Zeilen */
         .persian-line {
@@ -193,8 +194,8 @@
 
         /* Responsive Anpassungen */
         @media (max-width: 600px) {
-            .hero h1  { font-size: 50px; }
-            .hero .sub { font-size: 24px; }
+            .hero h1  { font-size: 56px; }
+            .hero .sub { font-size: 26px; }
             h2 { font-size: 40px; }
             h3 { font-size: 24px; }
             h4 { font-size: 28px; }
