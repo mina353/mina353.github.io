@@ -48,7 +48,7 @@
         h2 { font-size: 48px; margin-bottom: 20px; color: #444; }
         h3 { font-size: 22px; color: #333; }
         h4 { font-size: 28px; margin: 6px 0; color: #333; }
-        h5 { text-align: center; font-size: 90px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
+        h5 { text-align: center; font-size: 68px;font-weight: 400; margin-bottom: 20px; font-family:'Kapakana'; color: #444; }
         h6 { font-size: 26px; margin-bottom: 6px; color: #444; }
         p  { font-size: 24px; margin: 6px 0; color: #333; }
 
