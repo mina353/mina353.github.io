@@ -115,7 +115,7 @@
         }
         .monogram .initials {
             font-family: 'Playfair Display', serif; /* AUSNAHME */
-            font-size: 80px;
+            font-size: 70px;
             font-weight: bold;
             letter-spacing: 10px;
             color: #fff;
@@ -219,10 +219,10 @@
     </script>
 </head>
 <body>
-
+/*♥*/
     <section class="hero">
         <section class="monogram">
-            <div class="initials">A<span class="symbol">♥</span>M</div>
+            <div class="initials">A<span class="symbol">|</span>M</div>
             <div class="sub">Save the Date</div>
             <div class="sub">20/03/2026</div>
         </section>
