@@ -240,7 +240,7 @@
         <p class="animate-on-scroll"><span class="grosschrift">Liebe Familie und Freunde,</span></p>
         <span class="extra-space2"></span>
         <p class="animate-on-scroll">
-            Wir freuen uns sehr, euch am <strong>20. März 2026 um 16:00 </strong> Uhr zu unserer Hochzeit einzuladen. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
+            Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen. Wir können es kaum erwarten, diesen einzigartigen Moment mit euch zu teilen.
         </p>
         <span class="extra-space1"></span>
         <p class="animate-on-scroll"> Wir bitten euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
@@ -249,8 +249,8 @@
         <span class="extra-space1"></span>
         <p class="animate-on-scroll persian-line">‎ازدواج تنها پیوند زمینی است که در آسمان‌ها بسته می شود.</p>
         <p class="animate-on-scroll persian-line">‎به نام خالق عشق
-‎با افتخار دعوتتان می‌کنیم تا در جشن ازدواجمان حضور یابید.</p>
-        <p class="animate-on-scroll persian-line">‎لطفا تا اوایل ماه فبروری حضورتان را در جشن عروسی به ما اطلاع دهید.</p>
+‎با افتخار دعوتتان می‌کنیم تا در جشن ازدواجمان حضور یابید. ‎لطفا تا اوایل ماه فبروری حضورتان را در جشن عروسی به ما اطلاع دهید.</p>
+        <p class="animate-on-scroll persian-line">‎</p>
     </section>
 
 
