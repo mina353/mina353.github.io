@@ -245,11 +245,12 @@
         <span class="extra-space1"></span>
         <p class="animate-on-scroll"> Wir bitten euch, uns bis Anfang Februar mitzuteilen, ob ihr dabei sein könnt.</p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll">Sie sind herzlich eingeladen – die Einladung gilt für 4 Personen.</p>
+        <p class="animate-on-scroll">Ihre ganze Familie sind herzlich eingeladen.</p>
         <span class="extra-space1"></span>
-        <p class="animate-on-scroll persian-line">به  همراه  خانواده‌های  عزیزمان,</p>
-        <p class="animate-on-scroll persian-line"> شما  را  با  کمال  افتخار  و  شادی  دعوت  می‌کنیم</p>
-        <p class="animate-on-scroll persian-line">تا  در  جشن  آغاز  زندگی  مشترکمان  کنار  ماباشید.</p>
+        <p class="animate-on-scroll persian-line">‎ازدواج تنها پیوند زمینی است که در آسمان‌ها بسته می شود.</p>
+        <p class="animate-on-scroll persian-line">‎به نام خالق عشق
+‎با افتخار دعوتتان می‌کنیم تا در جشن ازدواجمان حضور یابید.</p>
+        <p class="animate-on-scroll persian-line">‎لطفا تا اوایل ماه فبروری حضورتان را در جشن عروسی به ما اطلاع دهید.</p>
     </section>
 
 
