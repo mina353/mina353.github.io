@@ -251,7 +251,7 @@
  <span class="extra-space1"></span>
  <p class="animate-on-scroll persian-line">‎به نام خالق عشق
 ‎با افتخار دعوتتان می‌کنیم تا در جشن ازدواجمان حضور یابید. ‎لطفا تا اوایل ماه فبروری حضورتان را در جشن عروسی به ما اطلاع دهید.</p>
- <p class="animate-on-scroll persian-line">‎</p>
+ <p class="animate-on-scroll persian-line">‎(به همرای فامیل )</p>
     </section>
 
 
