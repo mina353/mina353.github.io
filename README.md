@@ -246,8 +246,6 @@
  <span class="extra-space1"></span>
  <p class="animate-on-scroll">Ihre ganze Familie sind herzlich eingeladen.</p>
  <span class="extra-space1"></span>
-  <span class="extra-space1"></span>
-<p class="animate-on-scroll persian-line">‎ازدواج تنها پیوند زمینی است که در آسمان‌ها بسته می شود.</p>
  <span class="extra-space1"></span>
  <p class="animate-on-scroll persian-line">‎به نام خالق عشق
 ‎با افتخار دعوتتان می‌کنیم تا در جشن ازدواجمان حضور یابید. ‎لطفا تا اوایل ماه فبروری حضورتان را در جشن عروسی به ما اطلاع دهید.</p>
